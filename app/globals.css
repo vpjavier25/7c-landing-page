@@ -1,26 +1,36 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  font-size: 16px;
+  --primamry: #E7C36A;
+  --background: #000000;
+  --header: rgb(0,0,0,0.8);
+  --text: white;
+  --font-gotham: var(--font-gotham);
+  --font-theseason: var(--font-theseason);
+  --font-gotham-italic: var(--font-gotham-italic);
+  --font-theseason-italic: var(--font-theseason-italic);
+
 }
 
-@theme inline {
+@theme {
+  --color-header: var(--header);
   --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+  --color-primary: var(--primamry);
+  --font-gotham: var(--font-gotham); 
+  --font-theseason: var(--font-theseason);
+  --font-gotham-italic: var(--font-gotham-italic);
+  --font-theseason-italic: var(--font-theseason-italic);
 
-@media (prefers-color-scheme: dark) {
+}
+/* @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
   }
-}
+} */
 
 body {
   background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  color: var(--text);
 }
