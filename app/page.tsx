@@ -10,7 +10,7 @@ export default function Home() {
     img2: "/IMG_Experiencias 2.png",
     img3: "/IMG_Experiencias 3.png",
     img4: "/IMG_Experiencias 4.png",
-  } 
+  }
 
   const menuSection = {
     img1: "/button Cocteleria.png",
@@ -111,6 +111,7 @@ export default function Home() {
             </div>
           </div>
         </section>
+
         <section id="menu" className="flex flex-col items-center justify-center w-full gap-20 mt-30">
           <div className="flex flex-col gap-10 h-full w-full bg-[url('/Menu_Principal.png')] bg-cover bg-no-repeat">
             <p className="font-theseason-italic font-medium text-4xl text-center px-5 sm:text-6xl md:text-7xl xl:text-8xl">
@@ -163,7 +164,7 @@ export default function Home() {
 
           </div>
         </section>
-        <section id="contacto" className="flex flex-col items-center justify-center w-full gap-8 mt-20 p-10">
+        <section id="contacto" className="flex flex-col items-center justify-center w-full gap-25 mt-20 p-10">
           <div className="flex flex-wrap items-center justify-center sm:flex-nowrap">
             <div className="flex flex-nowrap items-center">
               <span className="w-13 h-0 border-primary border-1"></span>
@@ -189,6 +190,14 @@ export default function Home() {
               <img src="/icons8-mensaje-48.png" alt="Mensaje" className='w-10 h-10' />
               <span>CONTACTO@7CIELOS.COM</span>
             </div>
+          </div>
+          <div className="flex w-auto items-center gap-3 font-gotham text-base sm:text-xl">
+            <span className="w-13 h-0 border-primary border-1"></span>
+            <p className="font-theseason-italic font-medium text-5xl text-center px-5 sm:text-7xl">
+              Siguenos en
+            </p>
+            <img src="/Button Tik tok.png" alt="Instagram" className='w-15 h-15' />
+            <img src="/Button_Instagram.png" alt="Facebook" className='w-15 h-15' />
           </div>
         </section>
         <section id="politicas" className="flex flex-col items-center justify-center w-full gap-8 mt-20 p-10">
