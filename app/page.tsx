@@ -13,13 +13,11 @@ export default function Home() {
   }
 
   const menuSection = {
-    img1: "/button Cocteleria.png",
-    img2: "/Button Entrada.png",
-    img3: "/Button Plato fuerte.png",
-    img4: "/Button Postre.png",
+    img1: ["/button Cocteleria.png", "https://menu.tu-mesa.com/7-cielos/7325/menu/?scrollTop=cocteles-de-autor"],
+    img2: ["/Button Entrada.png", "https://menu.tu-mesa.com/7-cielos/7325/menu/?scrollTop=entradas"],
+    img3: ["/Button Plato fuerte.png", "https://menu.tu-mesa.com/7-cielos/7325/menu/?scrollTop=arroces-risottos"],
+    img4: ["/Button Postre.png", "https://menu.tu-mesa.com/7-cielos/7325/menu/?scrollTop=postres"],
   }
-
-
 
   return (
     <div className="flex flex-col w-full ">
@@ -83,10 +81,10 @@ export default function Home() {
               <div className="flex flex-wrap flex-col-reverse justify-center items-center gap-20 xl:flex-row">
                 <img src="/IMG_Vibra y Ritmo.png" alt="Card" className="w-80 sm:w-100" />
                 <div className="flex flex-col items-center gap-10 xl:items-end">
-                  <p className="font-theseason-italic font-medium text-5xl text-center px-5 sm:text-6xl md:text-7xl xl:text-8xl xl:text-right">
+                  <p className="font-theseason-italic font-medium text-5xl text-center sm:text-6xl md:text-7xl xl:text-8xl xl:text-right">
                     Vibra <br />y ritmo
                   </p>
-                  <p className="font-medium font-gotham text-xs/6 text-center px-5 sm:text-md/6 xl:text-base/6 xl:text-right">
+                  <p className="font-medium font-gotham text-xs/6 text-center  sm:text-md/6 xl:text-base/6 xl:text-right">
                     VIVE LA ENERGIA DE NUESTROS <br />
                     ATARDECERES Y LAS MÁGICAS NOCHES CON <br />
                     MÚSICA EN VIVO, DJS Y EVENTOS ESPECIALES.<br />
@@ -124,7 +122,9 @@ export default function Home() {
             </p>
             <div className="flex flex-wrap gap-5 mt-10 justify-center">
               {Object.values(menuSection).map((img, index) => (
-                <img key={index} src={img} alt="Card" className="w-80 sm:w-100" />
+                <a key={index} href={img[1]} target="_blank">
+                  <img src={img[0]} alt="Card" className="w-80 sm:w-100 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-105 cursor-pointer" />
+                </a>
               ))}
             </div>
           </div>
@@ -164,7 +164,7 @@ export default function Home() {
 
           </div>
         </section>
-        <section id="contacto" className="flex flex-col items-center justify-center w-full gap-25 mt-20 p-10">
+        <section id="contacto" className="flex flex-col items-center justify-center w-full gap-10 sm:gap-25 mt-5 sm:mt-20 p-10">
           <div className="flex flex-wrap items-center justify-center sm:flex-nowrap">
             <div className="flex flex-nowrap items-center">
               <span className="w-13 h-0 border-primary border-1"></span>
@@ -183,24 +183,32 @@ export default function Home() {
               Info directa
             </p>
             <div className="flex w-auto items-center gap-3 font-gotham text-base sm:text-xl">
-              <img src="/icons8-whatsapp-50.png" alt="Whatsapp" className='w-10 h-10' />
+              <img src="/icons8-whatsapp-50.png" alt="Whatsapp" className='w-10 h-10 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 cursor-pointer' />
               <span>+57 300 866 3045</span>
             </div>
             <div className="flex w-auto items-center gap-3 font-gotham text-base sm:text-xl">
-              <img src="/icons8-mensaje-48.png" alt="Mensaje" className='w-10 h-10' />
+              <img src="/icons8-mensaje-48.png" alt="Mensaje" className='w-10 h-10 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 cursor-pointer' />
               <span>CONTACTO@7CIELOS.COM</span>
             </div>
           </div>
-          <div className="flex w-auto items-center gap-3 font-gotham text-base sm:text-xl">
-            <span className="w-13 h-0 border-primary border-1"></span>
-            <p className="font-theseason-italic font-medium text-5xl text-center px-5 sm:text-7xl">
-              Siguenos en
-            </p>
-            <img src="/Button Tik tok.png" alt="Instagram" className='w-15 h-15' />
-            <img src="/Button_Instagram.png" alt="Facebook" className='w-15 h-15' />
+          <div className="flex w-auto flex-wrap justify-center items-center gap-3 font-gotham text-base sm:text-xl">
+            <div className="flex w-auto items-center gap-3">
+              <span className="w-13 h-0 border-primary border-1"></span>
+              <p className="font-theseason-italic font-medium text-5xl text-center px-5 sm:text-7xl">
+                Siguenos en
+              </p>
+            </div>
+            <div className="flex  w-auto items-center gap-3 font-gotham text-base sm:text-xl">
+              <a href="https://www.instagram.com/7cielos_rooftop/?hl=es" target="_blank">
+                <img src="/Button_Tik_tok.png" alt="Tik tok" className='w-15 h-15 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 cursor-pointer' />
+              </a>
+              <a href="https://www.tiktok.com/@7cielos.rooftop?lang=es" target="_blank">
+                <img src="/Button_Instagram.png" alt="Instagram" className='w-15 h-15 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 cursor-pointer' />
+              </a>
+            </div>
           </div>
         </section>
-        <section id="politicas" className="flex flex-col items-center justify-center w-full gap-8 mt-20 p-10">
+        <section id="politicas" className="flex flex-col items-center justify-center w-full gap-8 mt-5 sm:mt-20 p-10">
           <div className="flex">
             <span className="w-13 h-0 border-primary border-1 mt-5 sm:mt-8 "></span>
             <p className="font-medium font-theseason-italic text-5xl text-center mb-7 px-5 sm:text-8xl sm:text-left">
