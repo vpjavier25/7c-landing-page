@@ -58,14 +58,14 @@ export default function Home() {
               AMBIENTE VIBRANTE Y VISTAS ÚNICAS DE CARTAGENA. CADA VISITA ES UN MOMENTO PARA RECORDAR.
             </p>
             <div className="flex justify-center flex-nowrap w-full sm:flex-wrap mt-10">
-              <div className="flex overflow-x-auto gap-5">
+              <div className="flex overflow-x-auto gap-5 px-4">
                 {Object.values(homeSection).map((img, index) => (
                   <img key={index} src={img} alt="Card" className="w-70 sm:w-90" />
                 ))}
               </div>
             </div>
 
-            <div className="flex flex-col gap-35 w-full mt-15 mb-25 xl:mt-25 xl:mb-40">
+            <div className="flex flex-col gap-20 w-full mt-15 mb-25 xl:mt-25 xl:mb-40">
               <div className="flex flex-wrap items-center justify-center gap-15 w-full xl:gap-40">
                 <div className="flex flex-col justify-center items-center">
                   <p className="font-theseason-italic font-medium text-4xl mb-10 text-center px5 sm:text-6xl md:text-7xl xl:text-8xl xl:text-left">
@@ -119,7 +119,7 @@ export default function Home() {
               Explora <span className="text-4xl text-primary font-medium font-theseason-italic sm:text-6xl md:text-7xl xl:text-8xl">nuestros platos</span> <br />
               <span className="font-medium font-theseason text-4xl text-center mb-7 sm:text-6xl md:text-7xl xl:text-8xl">cuidadosamente seleccionados</span>
             </p>
-            <p className="font-medium font-gotham text-xs/6  text-center sm:text-md/6 xl:text-base/6">
+            <p className="font-medium font-gotham text-xs/6  text-center px-4 sm:text-md/6 xl:text-base/6">
               PARA OFRECERTE UNA EXPERIANCIA INOLVIDABLE: SABORES LOCALES CON TOQUES<br />
               INTERACIONALES, INGREDIENTES FRESCOS Y CREATIVIDAD EN CADA BOCADO.
             </p>
@@ -133,9 +133,9 @@ export default function Home() {
           </div>
         </section>
         <section id="ubicacion" className="flex flex-col items-center justify-center w-full gap-8 pt-20 px-10 bg-background">
-          <p className="font-theseason font-medium text-5xl text-center px-5 sm:text-7xl">
+          <p className="font-theseason font-medium text-4xl text-center px-5 sm:text-7xl">
             Estamos ubicados en el exclusivo <br />
-            sector <span className="text-5xl text-primary font-medium font-theseason-italic px-5 sm:text-7xl">Bocagrande</span>
+            sector <span className="text-4xl text-primary font-medium font-theseason-italic px-5 sm:text-7xl">Bocagrande</span>
             , en Cartagena
           </p>
           <p className="font-medium font-gotham text-xs/6 text-center mb-7 px-5 sm:text-base/6">
@@ -181,8 +181,8 @@ export default function Home() {
           </div>
           <Form />
           <div className="w-full bg-background-secondary pt-20 sm:pt-25">
-            <div className="flex flex-wrap items-center justify-center lg :flex-nowrap gap-5">
-              <span className="w-13 h-0 border-primary border-1"></span>
+            <div className="flex flex-wrap items-center justify-center lg :flex-nowrap gap-2 lg:gap-5">
+              <span className="w-5 h-0 border-primary border-1"></span>
               <p className="font-theseason-italic font-medium text-5xl text-center px-5 sm:text-7xl">
                 Info directa
               </p>
@@ -196,8 +196,8 @@ export default function Home() {
               </div>
             </div>
             <div className="flex w-auto flex-wrap justify-center items-center gap-3 font-gotham text-base sm:text-xl">
-              <div className="flex w-auto items-center gap-3 pt-20">
-                <span className="w-13 h-0 border-primary border-1"></span>
+              <div className="flex w-auto items-center gap-2 lg:gap-5 pt-20">
+                <span className="w-5 h-0 border-primary border-1 lg:w-13"></span>
                 <p className="font-theseason-italic font-medium text-5xl text-center px-5 sm:text-7xl">
                   Siguenos en
                 </p>
@@ -215,8 +215,8 @@ export default function Home() {
 
         </section>
         <section id="politicas" className="w-full bg-background-secondary flex flex-col items-center justify-center w-full gap-8 pt-20 sm:py-30 p-10">
-          <div className="flex">
-            <span className="w-13 h-0 border-primary border-1 mt-5 sm:mt-8 "></span>
+          <div className="flex gap-2 lg:gap-5">
+            <span className="w-5 h-0 border-primary border-1 mt-5 sm:mt-8 lg:w-13 "></span>
             <p className="font-medium font-theseason-italic text-5xl text-center mb-7 px-5 sm:text-8xl sm:text-left">
               Politica de privacidad <br />
               y tratamiento de datos
