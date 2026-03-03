@@ -59,7 +59,7 @@ export default function Home() {
             </p>
             <div className="flex justify-center flex-nowrap gap-5 overflow-hidden overflow-x-auto sm:flex-wrap mt-10">
               {Object.values(homeSection).map((img, index) => (
-                <img key={index} src={img} alt="Card" className="w-80 sm:w-100" />
+                <img key={index} src={img} alt="Card" className="w-70 sm:w-90" />
               ))}
             </div>
             <div className="flex flex-col gap-35 w-full mt-15 mb-25 xl:mt-25 xl:mb-40">
@@ -76,10 +76,10 @@ export default function Home() {
                   </p>
                   <Button color="dark">DESCUBRE MÁS</Button>
                 </div>
-                <img src="/IMG_Sabores y Aroma.png" alt="Card" className="w-80 sm:w-100" />
+                <img src="/IMG_Sabores y Aroma.png" alt="Card" className="w-70 sm:w-90" />
               </div>
               <div className="flex flex-wrap flex-col-reverse justify-center items-center gap-20 xl:flex-row">
-                <img src="/IMG_Vibra y Ritmo.png" alt="Card" className="w-80 sm:w-100" />
+                <img src="/IMG_Vibra y Ritmo.png" alt="Card" className="w-70 sm:w-90" />
                 <div className="flex flex-col items-center gap-10 xl:items-end">
                   <p className="font-theseason-italic font-medium text-5xl text-center sm:text-6xl md:text-7xl xl:text-8xl xl:text-right">
                     Vibra <br />y ritmo
@@ -123,7 +123,7 @@ export default function Home() {
             <div className="flex flex-wrap gap-5 mt-10 justify-center">
               {Object.values(menuSection).map((img, index) => (
                 <a key={index} href={img[1]} target="_blank">
-                  <img src={img[0]} alt="Card" className="w-80 sm:w-100 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-105 cursor-pointer" />
+                  <img src={img[0]} alt="Card" className="w-70 sm:w-90 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-105 cursor-pointer" />
                 </a>
               ))}
             </div>
