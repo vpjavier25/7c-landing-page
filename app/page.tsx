@@ -37,7 +37,7 @@ export default function Home() {
                 AUTOR, ATARDECERES MÁGICOS Y NOCHES MUY CERCA DEL CIELO
               </p>
             </div>
-            <div className="flex flex-col sm:flex-row gap-4 mt-10">
+            <div className="flex flex-col justify-center items-center sm:flex-row gap-4 mt-10">
               <Button color="dark" url="https://www.apparta.co/tito-bravo-parrilla-pizza-and-mar/reservas?utm_medium=instagram">RESERVAR AHORA</Button>
               <Button color="light" url="https://menu.tu-mesa.com/tito-bravo-parrilla-pizza-and-mar/7591/">VER MENÚ</Button>
             </div>
@@ -57,11 +57,14 @@ export default function Home() {
               EN 7 CIELOS ROOFTOP FUSIONAMOS GASTRONOMÍAS INTERNACIONALES Y COCTELERÍA DE AUTOR CON UN <br />
               AMBIENTE VIBRANTE Y VISTAS ÚNICAS DE CARTAGENA. CADA VISITA ES UN MOMENTO PARA RECORDAR.
             </p>
-            <div className="flex justify-center flex-nowrap gap-5 overflow-hidden overflow-x-auto sm:flex-wrap mt-10">
-              {Object.values(homeSection).map((img, index) => (
-                <img key={index} src={img} alt="Card" className="w-70 sm:w-90" />
-              ))}
+            <div className="flex justify-center flex-nowrap w-full sm:flex-wrap mt-10">
+              <div className="flex overflow-x-auto gap-5">
+                {Object.values(homeSection).map((img, index) => (
+                  <img key={index} src={img} alt="Card" className="w-70 sm:w-90" />
+                ))}
+              </div>
             </div>
+
             <div className="flex flex-col gap-35 w-full mt-15 mb-25 xl:mt-25 xl:mb-40">
               <div className="flex flex-wrap items-center justify-center gap-15 w-full xl:gap-40">
                 <div className="flex flex-col justify-center items-center">
@@ -177,7 +180,7 @@ export default function Home() {
             </p>
           </div>
           <Form />
-          <div className="w-full - bg-background-secondary pt-20 sm:pt-25">
+          <div className="w-full bg-background-secondary pt-20 sm:pt-25">
             <div className="flex flex-wrap items-center justify-center lg :flex-nowrap gap-5">
               <span className="w-13 h-0 border-primary border-1"></span>
               <p className="font-theseason-italic font-medium text-5xl text-center px-5 sm:text-7xl">
@@ -193,7 +196,7 @@ export default function Home() {
               </div>
             </div>
             <div className="flex w-auto flex-wrap justify-center items-center gap-3 font-gotham text-base sm:text-xl">
-              <div className="flex w-auto items-center gap-3">
+              <div className="flex w-auto items-center gap-3 pt-20">
                 <span className="w-13 h-0 border-primary border-1"></span>
                 <p className="font-theseason-italic font-medium text-5xl text-center px-5 sm:text-7xl">
                   Siguenos en
@@ -211,7 +214,7 @@ export default function Home() {
           </div>
 
         </section>
-        <section id="politicas" className="w-full bg-background-secondary flex flex-col items-center justify-center w-full gap-8 sm:py-30 p-10">
+        <section id="politicas" className="w-full bg-background-secondary flex flex-col items-center justify-center w-full gap-8 pt-20 sm:py-30 p-10">
           <div className="flex">
             <span className="w-13 h-0 border-primary border-1 mt-5 sm:mt-8 "></span>
             <p className="font-medium font-theseason-italic text-5xl text-center mb-7 px-5 sm:text-8xl sm:text-left">

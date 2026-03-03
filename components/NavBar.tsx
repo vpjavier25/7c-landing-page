@@ -36,12 +36,12 @@ export default function NavBar() {
 
     return (
         <>
-            <header className={`flex items-center justify-center  fixed top-0 right-0 z-50 w-full flex-col gap-10  ${isScrolled ? 'bg-header sm:flex-row sm:gap-40 ' : 'pt-10 '}`}>
+            <header className={`flex items-center justify-center  fixed top-0 right-0 z-50 w-full gap-10 transition duration-300 ease-in-out ${isScrolled ? 'bg-header sm:flex-row sm:gap-40 sm:py-4 ' : 'sm:flex-col sm:pt-10 '}`}>
                 <Image src="/logo.png" alt="Logo" width={150} height={100} />
-                <nav className="flex items-center justify-between p-4 font-gotham font-medium">
+                <nav className="flex items-center justify-between sm:p-4 font-gotham font-medium">
                     <ul className="invisible flex flex-wrap sm:gap-15 xl:gap-40 text-gray-400 lg:visible">
-                        <a href="#home" className='nav-link'><li className="hover:text-white transition-colors cursor-pointer hover:underline hover:decoration-[var(--primamry)] hover:decoration-2 hover:underline-offset-4">HOME</li></a>
-                        <a href="#menu" className='nav-link'><li className="hover:text-white transition-colors cursor-pointer hover:underline hover:decoration-[var(--primamry)] hover:decoration-2 hover:underline-offset-4">MENÚ</li></a>
+                        <a href="#home" className='nav-link' ><li className="hover:text-white transition-colors cursor-pointer hover:underline hover:decoration-[var(--primamry)] hover:decoration-2 hover:underline-offset-4">HOME</li></a>
+                        <a href="#menu" className='nav-link' onClick={() => setIsMenuOpen(!isMenuOpen)}><li className="hover:text-white transition-colors cursor-pointer hover:underline hover:decoration-[var(--primamry)] hover:decoration-2 hover:underline-offset-4">MENÚ</li></a>
                         <a href="#ubicacion" className='nav-link'><li className="hover:text-white transition-colors cursor-pointer hover:underline hover:decoration-[var(--primamry)] hover:decoration-2 hover:underline-offset-4">UBICACIÓN</li></a>
                         <a href="#contacto" className='nav-link'><li className="hover:text-white transition-colors cursor-pointer hover:underline hover:decoration-[var(--primamry)] hover:decoration-2 hover:underline-offset-4">CONTACTO</li></a>
                         <a href="#politicas" className='nav-link'><li className="hover:text-white transition-colors cursor-pointer hover:underline hover:decoration-[var(--primamry)] hover:decoration-2 hover:underline-offset-4">POLÍTICAS DE PRIVACIDAD</li></a>
@@ -59,11 +59,11 @@ export default function NavBar() {
                         <span className='w-10 h-1 bg-white transition duration-300 ease-in-out rotate-45'></span>
                     </button>
                     <ul className="flex flex-col justify-center items-center gap-5 text-gray-400 fixed pt-40 top-0 right-0 z-10 bg-header mb-5 py-5 lg:hidden w-full">
-                        <a href="#home" className='nav-link'><li className="hover:text-white transition-colors cursor-pointer hover:underline hover:decoration-[var(--primamry)] hover:decoration-2 hover:underline-offset-4">HOME</li></a>
-                        <a href="#menu" className='nav-link'><li className="hover:text-white transition-colors cursor-pointer hover:underline hover:decoration-[var(--primamry)] hover:decoration-2 hover:underline-offset-4">MENÚ</li></a>
-                        <a href="#ubicacion" className='nav-link'><li className="hover:text-white transition-colors cursor-pointer hover:underline hover:decoration-[var(--primamry)] hover:decoration-2 hover:underline-offset-4">UBICACIÓN</li></a>
-                        <a href="#contacto" className='nav-link'><li className="hover:text-white transition-colors cursor-pointer hover:underline hover:decoration-[var(--primamry)] hover:decoration-2 hover:underline-offset-4">CONTACTO</li></a>
-                        <a href="#politicas" className='nav-link'><li className="hover:text-white transition-colors cursor-pointer hover:underline hover:decoration-[var(--primamry)] hover:decoration-2 hover:underline-offset-4">POLÍTICAS DE PRIVACIDAD</li></a>
+                        <a href="#home" className='nav-link' onClick={() => setIsMenuOpen(!isMenuOpen)}><li className="hover:text-white transition-colors cursor-pointer hover:underline hover:decoration-[var(--primamry)] hover:decoration-2 hover:underline-offset-4">HOME</li></a>
+                        <a href="#menu" className='nav-link' onClick={() => setIsMenuOpen(!isMenuOpen)}><li className="hover:text-white transition-colors cursor-pointer hover:underline hover:decoration-[var(--primamry)] hover:decoration-2 hover:underline-offset-4">MENÚ</li></a>
+                        <a href="#ubicacion" className='nav-link' onClick={() => setIsMenuOpen(!isMenuOpen)}><li className="hover:text-white transition-colors cursor-pointer hover:underline hover:decoration-[var(--primamry)] hover:decoration-2 hover:underline-offset-4">UBICACIÓN</li></a>
+                        <a href="#contacto" className='nav-link' onClick={() => setIsMenuOpen(!isMenuOpen)}><li className="hover:text-white transition-colors cursor-pointer hover:underline hover:decoration-[var(--primamry)] hover:decoration-2 hover:underline-offset-4">CONTACTO</li></a>
+                        <a href="#politicas" className='nav-link' onClick={() => setIsMenuOpen(!isMenuOpen)}><li className="hover:text-white transition-colors cursor-pointer hover:underline hover:decoration-[var(--primamry)] hover:decoration-2 hover:underline-offset-4">POLÍTICAS DE PRIVACIDAD</li></a>
                     </ul>
                 </>
             )}
