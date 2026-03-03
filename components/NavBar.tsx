@@ -20,7 +20,6 @@ export default function NavBar() {
                 const sectionPosition = section.getBoundingClientRect().top;
                 if (sectionPosition < viewportHeightNoScrollbar / 2) {
                     current = section.getAttribute('id') || "";
-
                 }
             });
 
@@ -37,8 +36,8 @@ export default function NavBar() {
 
     return (
         <>
-            <header className={`flex items-center justify-center  fixed top-0 right-0 z-50 xl:h-60 w-full sm:flex-col ${isScrolled ? 'bg-header' : ''}`}>
-                <Image src="/logo.PNG" alt="Logo" width={150} height={100} />
+            <header className={`flex items-center justify-center  fixed top-0 right-0 z-50 w-full flex-col gap-10  ${isScrolled ? 'bg-header sm:flex-row sm:gap-40 ' : 'pt-10 '}`}>
+                <Image src="/logo.png" alt="Logo" width={150} height={100} />
                 <nav className="flex items-center justify-between p-4 font-gotham font-medium">
                     <ul className="invisible flex flex-wrap sm:gap-15 xl:gap-40 text-gray-400 lg:visible">
                         <a href="#home" className='nav-link'><li className="hover:text-white transition-colors cursor-pointer hover:underline hover:decoration-[var(--primamry)] hover:decoration-2 hover:underline-offset-4">HOME</li></a>

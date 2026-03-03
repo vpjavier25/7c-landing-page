@@ -5,7 +5,7 @@ import Button from './Button'
 
 export default function Form() {
     return (
-        <form action="" className='flex flex-col gap-10 justify-center items-center w-full'>
+        <form action="" className='flex flex-col gap-10 justify-center items-center w-full bg-linear-[to_top,#171717_5%,#000000_95%]'>
             <div className='grid grid-cols-1 gap-2 sm:w-120 items-center sm:grid-cols-[50px_minmax(900px,_1fr)] sm:gap-5'>
             <label htmlFor="name" className='text-gray-500'>Nombre:</label>
             <input className='border-2 border-primary w-full sm:mt-5 px-4 py-2 sm:w-100 sm:mt-0' type="text" placeholder="Nombre" />

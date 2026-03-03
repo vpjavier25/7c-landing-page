@@ -23,7 +23,7 @@ export default function Home() {
     <div className="flex flex-col w-full ">
       <NavBar />
       <main className="flex flex-col grow">
-        <section id="home" className="flex flex-col items-center justify-center w-full">
+        <section id="home" className="flex flex-col items-center justify-center w-full bg-background">
           <div className="flex flex-col items-center justify-center w-full min-h-screen bg-[url('/IMG_Principal.png')] bg-cover bg-no-repeat">
             <div className="flex flex-col items-center justify-center pt-20 md:pt-40 p-4 gap-5">
               <p className="text-5xl font-medium font-theseason text-center px-5 sm:text-6xl md:text-7xl xl:text-8xl">
@@ -38,8 +38,8 @@ export default function Home() {
               </p>
             </div>
             <div className="flex flex-col sm:flex-row gap-4 mt-10">
-              <Button color="dark">RESERVAR AHORA</Button>
-              <Button color="light">VER MENÚ</Button>
+              <Button color="dark" url="https://www.apparta.co/tito-bravo-parrilla-pizza-and-mar/reservas?utm_medium=instagram">RESERVAR AHORA</Button>
+              <Button color="light" url="https://menu.tu-mesa.com/tito-bravo-parrilla-pizza-and-mar/7591/">VER MENÚ</Button>
             </div>
 
           </div>
@@ -90,7 +90,7 @@ export default function Home() {
                     MÚSICA EN VIVO, DJS Y EVENTOS ESPECIALES.<br />
                     PARA QUE CADA VISITA SEA ÚNICA.
                   </p>
-                  <Button color="dark">RESERVA TU EVENTO</Button>
+                  <Button color="dark" url="https://www.apparta.co/tito-bravo-parrilla-pizza-and-mar/reservas?utm_medium=instagram">RESERVA TU EVENTO</Button>
                 </div>
               </div>
             </div>
@@ -104,13 +104,13 @@ export default function Home() {
               ELIGE TU FECHA, HORA Y PERSONALIZA TU PLAN.
             </p>
             <div className="flex flex-col items-center justify-center gap-5 sm:flex-row">
-              <Button color="dark">RESERVAR AHORA</Button>
+              <Button color="dark" url="https://www.apparta.co/tito-bravo-parrilla-pizza-and-mar/reservas?utm_medium=instagram">RESERVAR AHORA</Button>
               <Button color="light">CONTÁCTANOS POR WHATSAPP</Button>
             </div>
           </div>
         </section>
 
-        <section id="menu" className="flex flex-col items-center justify-center w-full gap-20 mt-30">
+        <section id="menu" className="flex flex-col items-center justify-center w-full gap-20 pt-30 bg-background">
           <div className="flex flex-col gap-10 h-full w-full bg-[url('/Menu_Principal.png')] bg-cover bg-no-repeat">
             <p className="font-theseason-italic font-medium text-4xl text-center px-5 sm:text-6xl md:text-7xl xl:text-8xl">
               Explora <span className="text-4xl text-primary font-medium font-theseason-italic sm:text-6xl md:text-7xl xl:text-8xl">nuestros platos</span> <br />
@@ -129,7 +129,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section id="ubicacion" className="flex flex-col items-center justify-center w-full gap-8 mt-20 p-10">
+        <section id="ubicacion" className="flex flex-col items-center justify-center w-full gap-8 pt-20 px-10 bg-background">
           <p className="font-theseason font-medium text-5xl text-center px-5 sm:text-7xl">
             Estamos ubicados en el exclusivo <br />
             sector <span className="text-5xl text-primary font-medium font-theseason-italic px-5 sm:text-7xl">Bocagrande</span>
@@ -164,7 +164,7 @@ export default function Home() {
 
           </div>
         </section>
-        <section id="contacto" className="flex flex-col items-center justify-center w-full gap-10 sm:gap-25 mt-5 sm:mt-20 p-10">
+        <section id="contacto" className="flex flex-col items-center justify-center w-full pt-5 sm:pt-20 bg-background">
           <div className="flex flex-wrap items-center justify-center sm:flex-nowrap">
             <div className="flex flex-nowrap items-center">
               <span className="w-13 h-0 border-primary border-1"></span>
@@ -177,38 +177,41 @@ export default function Home() {
             </p>
           </div>
           <Form />
-          <div className="flex flex-wrap items-center justify-center lg :flex-nowrap gap-5">
-            <span className="w-13 h-0 border-primary border-1"></span>
-            <p className="font-theseason-italic font-medium text-5xl text-center px-5 sm:text-7xl">
-              Info directa
-            </p>
-            <div className="flex w-auto items-center gap-3 font-gotham text-base sm:text-xl">
-              <img src="/icons8-whatsapp-50.png" alt="Whatsapp" className='w-10 h-10 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 cursor-pointer' />
-              <span>+57 300 866 3045</span>
-            </div>
-            <div className="flex w-auto items-center gap-3 font-gotham text-base sm:text-xl">
-              <img src="/icons8-mensaje-48.png" alt="Mensaje" className='w-10 h-10 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 cursor-pointer' />
-              <span>CONTACTO@7CIELOS.COM</span>
-            </div>
-          </div>
-          <div className="flex w-auto flex-wrap justify-center items-center gap-3 font-gotham text-base sm:text-xl">
-            <div className="flex w-auto items-center gap-3">
+          <div className="w-full - bg-background-secondary pt-20 sm:pt-25">
+            <div className="flex flex-wrap items-center justify-center lg :flex-nowrap gap-5">
               <span className="w-13 h-0 border-primary border-1"></span>
               <p className="font-theseason-italic font-medium text-5xl text-center px-5 sm:text-7xl">
-                Siguenos en
+                Info directa
               </p>
+              <div className="flex w-auto items-center gap-3 font-gotham text-base sm:text-xl">
+                <img src="/icons8-whatsapp-50.png" alt="Whatsapp" className='w-10 h-10 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 cursor-pointer' />
+                <span>+57 300 866 3045</span>
+              </div>
+              <div className="flex w-auto items-center gap-3 font-gotham text-base sm:text-xl">
+                <img src="/icons8-mensaje-48.png" alt="Mensaje" className='w-10 h-10 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 cursor-pointer' />
+                <span>CONTACTO@7CIELOS.COM</span>
+              </div>
             </div>
-            <div className="flex  w-auto items-center gap-3 font-gotham text-base sm:text-xl">
-              <a href="https://www.instagram.com/7cielos_rooftop/?hl=es" target="_blank">
-                <img src="/Button_Tik_tok.png" alt="Tik tok" className='w-15 h-15 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 cursor-pointer' />
-              </a>
-              <a href="https://www.tiktok.com/@7cielos.rooftop?lang=es" target="_blank">
-                <img src="/Button_Instagram.png" alt="Instagram" className='w-15 h-15 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 cursor-pointer' />
-              </a>
+            <div className="flex w-auto flex-wrap justify-center items-center gap-3 font-gotham text-base sm:text-xl">
+              <div className="flex w-auto items-center gap-3">
+                <span className="w-13 h-0 border-primary border-1"></span>
+                <p className="font-theseason-italic font-medium text-5xl text-center px-5 sm:text-7xl">
+                  Siguenos en
+                </p>
+              </div>
+              <div className="flex  w-auto items-center gap-3 font-gotham text-base sm:text-xl">
+                <a href="https://www.instagram.com/7cielos_rooftop/?hl=es" target="_blank">
+                  <img src="/Button_Tik_tok.png" alt="Tik tok" className='w-15 h-15 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 cursor-pointer' />
+                </a>
+                <a href="https://www.tiktok.com/@7cielos.rooftop?lang=es" target="_blank">
+                  <img src="/Button_Instagram.png" alt="Instagram" className='w-15 h-15 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 cursor-pointer' />
+                </a>
+              </div>
             </div>
           </div>
+
         </section>
-        <section id="politicas" className="flex flex-col items-center justify-center w-full gap-8 mt-5 sm:mt-20 p-10">
+        <section id="politicas" className="w-full bg-background-secondary flex flex-col items-center justify-center w-full gap-8 sm:py-30 p-10">
           <div className="flex">
             <span className="w-13 h-0 border-primary border-1 mt-5 sm:mt-8 "></span>
             <p className="font-medium font-theseason-italic text-5xl text-center mb-7 px-5 sm:text-8xl sm:text-left">
