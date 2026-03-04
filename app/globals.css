@@ -11,6 +11,7 @@
   --font-theseason: var(--font-theseason);
   --font-gotham-italic: var(--font-gotham-italic);
   --font-theseason-italic: var(--font-theseason-italic);
+  --nav-width: 80vw;
 
 }
 
@@ -22,7 +23,7 @@
   --font-gotham: var(--font-gotham); 
   --font-theseason: var(--font-theseason);
   --font-gotham-italic: var(--font-gotham-italic);
-  --font-theseason-italic: var(--font-theseason-italic);
+  --font-theseason-italic: var(--font-theseason-italic)
 
 }
 /* @media (prefers-color-scheme: dark) {
