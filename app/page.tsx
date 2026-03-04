@@ -36,9 +36,9 @@ export default function Home() {
     <div className="flex flex-col w-full ">
       <NavBar />
       <main className="flex flex-col grow">
-        <section id="home" className="flex flex-col items-center justify-center w-full bg-background -z-20">
+        <section id="home" className="flex flex-col items-center justify-center w-full">
           <div className="relative flex flex-col items-center justify-center w-full min-h-screen">
-            <Image src="/IMG_Principal.png" alt="Vista exterior de 7 Cielos Rooftop en Cartagena" fill={true} priority={true} className='object-cover -z-10 absolute' />
+            <Image src="/IMG_Principal.png" alt="Vista exterior de 7 Cielos Rooftop en Cartagena" fill={true} priority={true} className='object-cover -z-10 absolute bg-background' />
             <div className="flex flex-col items-center justify-center pt-20 md:pt-40 p-4 gap-5">
               <h1 className="text-5xl font-medium font-theseason text-center px-5 sm:text-6xl md:text-7xl xl:text-8xl">
                 Vive sabores, vistas y <br></br><span className="text-4xl text-primary font-medium font-theseason-italic sm:text-6xl md:text-7xl xl:text-8xl">
@@ -57,7 +57,7 @@ export default function Home() {
             </div>
 
           </div>
-          <div className="flex flex-col items-center justify-center w-full xl:mt-20">
+          <div className="flex flex-col items-center justify-center w-full xl:pt-20 bg-background">
             <h2 className="text-5xl font-medium font-theseason mt-10 text-center px-5 sm:text-6xl md:text-7xl xl:text-8xl">
               Un lugar que <span className="text-5xl text-primary font-medium font-theseason-italic sm:text-6xl md:text-7xl xl:text-8xl">
                 trasciende</span> <br /> la {" "}
@@ -113,7 +113,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div>
+          <div className="bg-background w-full">
             <h2 className="font-theseason-italic font-medium text-5xl text-center mb-10 px-5 xl:text-8xl">
               Reservar es facil y rapido.
             </h2>
@@ -127,9 +127,9 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="menu" className="flex flex-col items-center justify-center w-full gap-20 pt-30 bg-background -z-20">
-          <div className="flex flex-col gap-10 h-full w-full relative">
-            <Image src="/Menu_Principal.png" alt="Menu" fill={true} className='object-cover -z-10 absolute' />
+        <section id="menu" className="flex flex-col items-center justify-center w-full gap-20">
+          <div className="flex flex-col gap-10 h-full w-full relative pt-30">
+            <Image src="/Menu_Principal.png" alt="Menu" fill={true} className='object-cover -z-10 absolute bg-background' />
             <h2 className="font-theseason-italic font-medium text-4xl text-center px-5 sm:text-6xl md:text-7xl xl:text-8xl">
               Explora <span className="text-4xl text-primary font-medium font-theseason-italic sm:text-6xl md:text-7xl xl:text-8xl">nuestros platos</span> <br />
               <span className="font-medium font-theseason text-4xl text-center mb-7 sm:text-6xl md:text-7xl xl:text-8xl">cuidadosamente seleccionados</span>
