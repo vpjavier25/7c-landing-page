@@ -2,6 +2,7 @@ import NavBar from "@/components/NavBar";
 import Button from "@/components/Button";
 import Form from "@/components/form";
 import Footer from "@/components/Footer";
+import Image from "next/image";
 
 export default function Home() {
 
@@ -19,18 +20,31 @@ export default function Home() {
     img4: ["/Button Postre.png", "https://menu.tu-mesa.com/7-cielos/7325/menu/?scrollTop=postres"],
   }
 
+  const buttonsLinks = {
+    reservarAhora: "https://www.apparta.co/7-cielos/reservas?utm_medium=instagram",
+    verMenu: "https://menu.tu-mesa.com/7-cielos/7325/",
+    descubrirMas: "https://www.apparta.co/7-cielos/reservas?utm_medium=instagram",
+    reservarEvento: "https://www.apparta.co/7-cielos/reservas?utm_medium=instagram",
+    contactoWhatsapp: "https://api.whatsapp.com/send?phone=573008663045",
+    tiktok: "https://www.tiktok.com/@7cielos.rooftop?lang=es",
+    instagram: "https://www.instagram.com/7cielos_rooftop/?hl=es",
+    contactoEmail: "[EMAIL_ADDRESS]"
+  }
+
+
   return (
     <div className="flex flex-col w-full ">
       <NavBar />
       <main className="flex flex-col grow">
-        <section id="home" className="flex flex-col items-center justify-center w-full bg-background">
-          <div className="flex flex-col items-center justify-center w-full min-h-screen bg-[url('/IMG_Principal.png')] bg-cover bg-no-repeat">
+        <section id="home" className="flex flex-col items-center justify-center w-full bg-background -z-20">
+          <div className="relative flex flex-col items-center justify-center w-full min-h-screen">
+            <Image src="/IMG_Principal.png" alt="Vista exterior de 7 Cielos Rooftop en Cartagena" fill={true} priority={true} className='object-cover -z-10 absolute' />
             <div className="flex flex-col items-center justify-center pt-20 md:pt-40 p-4 gap-5">
-              <p className="text-5xl font-medium font-theseason text-center px-5 sm:text-6xl md:text-7xl xl:text-8xl">
+              <h1 className="text-5xl font-medium font-theseason text-center px-5 sm:text-6xl md:text-7xl xl:text-8xl">
                 Vive sabores, vistas y <br></br><span className="text-4xl text-primary font-medium font-theseason-italic sm:text-6xl md:text-7xl xl:text-8xl">
                   momentos inolvidables
                 </span>
-              </p>
+              </h1>
 
               <p className="font-medium font-gotham text-xs/6 text-center sm:text-md/6 xl:text-base/6">
                 DESCUBRE UN ROOFTOP ÚNICO EN CARTAGENA CON GASTRONOMÍA FUSIÓN COCTELES DE <br />
@@ -38,20 +52,20 @@ export default function Home() {
               </p>
             </div>
             <div className="flex flex-col justify-center items-center sm:flex-row gap-4 mt-10">
-              <Button color="dark" url="https://www.apparta.co/tito-bravo-parrilla-pizza-and-mar/reservas?utm_medium=instagram">RESERVAR AHORA</Button>
-              <Button color="light" url="https://menu.tu-mesa.com/tito-bravo-parrilla-pizza-and-mar/7591/">VER MENÚ</Button>
+              <Button color="dark" url={buttonsLinks.reservarAhora} >RESERVAR AHORA</Button>
+              <Button color="light" url={buttonsLinks.verMenu} >VER MENÚ</Button>
             </div>
 
           </div>
           <div className="flex flex-col items-center justify-center w-full xl:mt-20">
-            <p className="text-5xl font-medium font-theseason mt-10 text-center px-5 sm:text-6xl md:text-7xl xl:text-8xl">
+            <h2 className="text-5xl font-medium font-theseason mt-10 text-center px-5 sm:text-6xl md:text-7xl xl:text-8xl">
               Un lugar que <span className="text-5xl text-primary font-medium font-theseason-italic sm:text-6xl md:text-7xl xl:text-8xl">
                 trasciende</span> <br /> la {" "}
               <span className="text-5xl text-primary font-medium font-theseason-italic sm:text-6xl md:text-7xl xl:text-8xl">
                 experiencia {""}
               </span>
               gastronómica
-            </p>
+            </h2>
 
             <p className="font-medium font-gotham text-xs/6 text-center mt-5 px-5 xl:mt-9 xl:mb-30 sm:text-md/6 xl:text-base/6">
               EN 7 CIELOS ROOFTOP FUSIONAMOS GASTRONOMÍAS INTERNACIONALES Y COCTELERÍA DE AUTOR CON UN <br />
@@ -60,7 +74,7 @@ export default function Home() {
             <div className="flex justify-center flex-nowrap w-full sm:flex-wrap mt-10">
               <div className="flex overflow-x-auto gap-5 px-4">
                 {Object.values(homeSection).map((img, index) => (
-                  <img key={index} src={img} alt="Card" className="w-70 sm:w-90" />
+                  <Image key={index} src={img} alt={`Experiencia en 7 Cielos Rooftop ${index + 1}`} className="w-70 h-auto sm:w-90" width={500} height={500} />
                 ))}
               </div>
             </div>
@@ -68,76 +82,77 @@ export default function Home() {
             <div className="flex flex-col gap-20 w-full mt-15 mb-25 xl:mt-25 xl:mb-40">
               <div className="flex flex-wrap items-center justify-center gap-15 w-full xl:gap-40">
                 <div className="flex flex-col justify-center items-center">
-                  <p className="font-theseason-italic font-medium text-4xl mb-10 text-center px5 sm:text-6xl md:text-7xl xl:text-8xl xl:text-left">
+                  <h3 className="font-theseason-italic font-medium text-4xl mb-10 text-center px-5 sm:text-6xl md:text-7xl xl:text-8xl xl:text-left">
                     Sabores, aromas, <br /> momentos <span className="text-4xl text-primary font-medium font-theseason-italic sm:text-6xl md:text-7xl xl:text-8xl xl:text-left">.</span>
-                  </p>
+                  </h3>
                   <p className="font-medium font-gotham text-xs/6 text-center mb-7 px-5 sm:text-md/6 xl:text-base/6 xl:text-left">
                     DESDE ENTRADAS SORPRENDENTES HASTA PLATOS PRINCIPALES <br className="hidden sm:block" />
                     LLENOS DE PERSONALIDAD - Y COCTELES QUE CUENTAN HISTORIAS <br className="hidden sm:block" />
                     7 CIELOS S EL PLAN PERFFECTO PARA CADA OCASIÓN: CITA <br className="hidden sm:block" />
                     ROMÁNTICA, CELEBRACIÓN CON AMIGOS O CENA CON VISTA.
                   </p>
-                  <Button color="dark">DESCUBRE MÁS</Button>
+                  <Button color="dark" url={buttonsLinks.descubrirMas}>DESCUBRE MÁS</Button>
                 </div>
-                <img src="/IMG_Sabores y Aroma.png" alt="Card" className="w-70 sm:w-90" />
+                <Image src="/IMG_Sabores y Aroma.png" alt="Plato de gastronomía fusión en 7 Cielos" className="w-70 h-auto sm:w-90" width={500} height={500} />
               </div>
               <div className="flex flex-wrap flex-col-reverse justify-center items-center gap-20 xl:flex-row">
-                <img src="/IMG_Vibra y Ritmo.png" alt="Card" className="w-70 sm:w-90" />
+                <Image src="/IMG_Vibra y Ritmo.png" alt="Dj en vivo y ambiente de fiesta en rooftop Cartagena" className="w-70 h-auto sm:w-90" width={500} height={500} />
                 <div className="flex flex-col items-center gap-10 xl:items-end">
-                  <p className="font-theseason-italic font-medium text-5xl text-center sm:text-6xl md:text-7xl xl:text-8xl xl:text-right">
+                  <h3 className="font-theseason-italic font-medium text-5xl text-center sm:text-6xl md:text-7xl xl:text-8xl xl:text-right">
                     Vibra <br />y ritmo
-                  </p>
+                  </h3>
                   <p className="font-medium font-gotham text-xs/6 text-center  sm:text-md/6 xl:text-base/6 xl:text-right">
                     VIVE LA ENERGIA DE NUESTROS <br />
                     ATARDECERES Y LAS MÁGICAS NOCHES CON <br />
                     MÚSICA EN VIVO, DJS Y EVENTOS ESPECIALES.<br />
                     PARA QUE CADA VISITA SEA ÚNICA.
                   </p>
-                  <Button color="dark" url="https://www.apparta.co/tito-bravo-parrilla-pizza-and-mar/reservas?utm_medium=instagram">RESERVA TU EVENTO</Button>
+                  <Button color="dark" url={buttonsLinks.reservarEvento}>RESERVA TU EVENTO</Button>
                 </div>
               </div>
             </div>
           </div>
 
           <div>
-            <p className="font-theseason-italic font-medium text-5xl text-center mb-10 px-5 xl:text-8xl">
+            <h2 className="font-theseason-italic font-medium text-5xl text-center mb-10 px-5 xl:text-8xl">
               Reservar es facil y rapido.
-            </p>
+            </h2>
             <p className="font-medium font-gotham text-xs/6 text-center mb-7 px-5 sm:text-md/6 xl:text-base/6">
               ELIGE TU FECHA, HORA Y PERSONALIZA TU PLAN.
             </p>
             <div className="flex flex-col items-center justify-center gap-5 sm:flex-row">
-              <Button color="dark" url="https://www.apparta.co/tito-bravo-parrilla-pizza-and-mar/reservas?utm_medium=instagram">RESERVAR AHORA</Button>
-              <Button color="light">CONTÁCTANOS POR WHATSAPP</Button>
+              <Button color="dark" url={buttonsLinks.reservarAhora}>RESERVAR AHORA</Button>
+              <Button color="light" url={buttonsLinks.contactoWhatsapp}>CONTÁCTANOS POR WHATSAPP</Button>
             </div>
           </div>
         </section>
 
-        <section id="menu" className="flex flex-col items-center justify-center w-full gap-20 pt-30 bg-background">
-          <div className="flex flex-col gap-10 h-full w-full bg-[url('/Menu_Principal.png')] bg-cover bg-no-repeat">
-            <p className="font-theseason-italic font-medium text-4xl text-center px-5 sm:text-6xl md:text-7xl xl:text-8xl">
+        <section id="menu" className="flex flex-col items-center justify-center w-full gap-20 pt-30 bg-background -z-20">
+          <div className="flex flex-col gap-10 h-full w-full relative">
+            <Image src="/Menu_Principal.png" alt="Menu" fill={true} className='object-cover -z-10 absolute' />
+            <h2 className="font-theseason-italic font-medium text-4xl text-center px-5 sm:text-6xl md:text-7xl xl:text-8xl">
               Explora <span className="text-4xl text-primary font-medium font-theseason-italic sm:text-6xl md:text-7xl xl:text-8xl">nuestros platos</span> <br />
               <span className="font-medium font-theseason text-4xl text-center mb-7 sm:text-6xl md:text-7xl xl:text-8xl">cuidadosamente seleccionados</span>
-            </p>
+            </h2>
             <p className="font-medium font-gotham text-xs/6  text-center px-4 sm:text-md/6 xl:text-base/6">
               PARA OFRECERTE UNA EXPERIANCIA INOLVIDABLE: SABORES LOCALES CON TOQUES<br />
               INTERACIONALES, INGREDIENTES FRESCOS Y CREATIVIDAD EN CADA BOCADO.
             </p>
             <div className="flex flex-wrap gap-5 mt-10 justify-center">
               {Object.values(menuSection).map((img, index) => (
-                <a key={index} href={img[1]} target="_blank">
-                  <img src={img[0]} alt="Card" className="w-70 sm:w-90 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-105 cursor-pointer" />
+                <a key={index} href={img[1]} target="_blank" rel="noopener noreferrer">
+                  <Image src={img[0]} alt={`Sección del menú ${index + 1}`} className="w-70 h-auto sm:w-90 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-105 cursor-pointer" width={500} height={500} />
                 </a>
               ))}
             </div>
           </div>
         </section>
         <section id="ubicacion" className="flex flex-col items-center justify-center w-full gap-8 pt-20 px-10 bg-background">
-          <p className="font-theseason font-medium text-4xl text-center px-5 sm:text-7xl">
+          <h2 className="font-theseason font-medium text-4xl text-center px-5 sm:text-7xl">
             Estamos ubicados en el exclusivo <br />
             sector <span className="text-4xl text-primary font-medium font-theseason-italic px-5 sm:text-7xl">Bocagrande</span>
             , en Cartagena
-          </p>
+          </h2>
           <p className="font-medium font-gotham text-xs/6 text-center mb-7 px-5 sm:text-base/6">
             CON UNA VISTA ÚNICA DE SU BAHÍA Y ATARDECERES ESPECTACULARES.
           </p>
@@ -171,9 +186,9 @@ export default function Home() {
           <div className="flex flex-wrap items-center justify-center sm:flex-nowrap">
             <div className="flex flex-nowrap items-center">
               <span className="w-13 h-0 border-primary border-1"></span>
-              <p className="font-theseason-italic font-medium text-5xl text-justify px-5 sm:text-7xl">
+              <h2 className="font-theseason-italic font-medium text-5xl text-justify px-5 sm:text-7xl">
                 Hablemos
-              </p>
+              </h2>
             </div>
             <p className="font-medium font-gotham text-[10px]/6 text-center mb-7 px-5 sm:text-xs/6 sm:text-left">
               <span className="text-primary">¿TIENES DUDAS O QUIERES RESERVAR UN <br /> EVENTO PRIVADO?</span> CONTACTANOS Y NUESTRO <br /> EQUIPO ESTARA ENCANTADO DE AYUDARTE
@@ -183,31 +198,35 @@ export default function Home() {
           <div className="w-full bg-background-secondary pt-20 sm:pt-25">
             <div className="flex flex-wrap items-center justify-center lg :flex-nowrap gap-2 lg:gap-5">
               <span className="w-5 h-0 border-primary border-1"></span>
-              <p className="font-theseason-italic font-medium text-5xl text-center px-5 sm:text-7xl">
+              <h3 className="font-theseason-italic font-medium text-5xl text-center px-5 sm:text-7xl">
                 Info directa
-              </p>
+              </h3>
               <div className="flex w-auto items-center gap-3 font-gotham text-base sm:text-xl">
-                <img src="/icons8-whatsapp-50.png" alt="Whatsapp" className='w-10 h-10 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 cursor-pointer' />
+                <a href={buttonsLinks.contactoWhatsapp} target="_blank" rel="noopener noreferrer">
+                  <Image src="/icons8-whatsapp-50.png" alt="Whatsapp" width={300} height={300} className='w-10 h-10 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 cursor-pointer' />
+                </a>
                 <span>+57 300 866 3045</span>
               </div>
               <div className="flex w-auto items-center gap-3 font-gotham text-base sm:text-xl">
-                <img src="/icons8-mensaje-48.png" alt="Mensaje" className='w-10 h-10 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 cursor-pointer' />
+                <a href={`mailto:${buttonsLinks.contactoEmail}`} target="_blank" rel="noopener noreferrer">
+                  <Image src="/icons8-mensaje-48.png" alt="Mensaje" width={300} height={300} className='w-10 h-10 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 cursor-pointer' />
+                </a>
                 <span>CONTACTO@7CIELOS.COM</span>
               </div>
             </div>
-            <div className="flex w-auto flex-wrap justify-center items-center gap-3 font-gotham text-base sm:text-xl">
-              <div className="flex w-auto items-center gap-2 lg:gap-5 pt-20">
+            <div className="flex w-auto flex-wrap justify-center items-center gap-3 font-gotham text-base pt-20 sm:text-xl">
+              <div className="flex w-auto items-center gap-2 lg:gap-5">
                 <span className="w-5 h-0 border-primary border-1 lg:w-13"></span>
-                <p className="font-theseason-italic font-medium text-5xl text-center px-5 sm:text-7xl">
+                <h3 className="font-theseason-italic font-medium text-5xl text-center px-5 sm:text-7xl">
                   Siguenos en
-                </p>
+                </h3>
               </div>
               <div className="flex  w-auto items-center gap-3 font-gotham text-base sm:text-xl">
-                <a href="https://www.instagram.com/7cielos_rooftop/?hl=es" target="_blank">
-                  <img src="/Button_Tik_tok.png" alt="Tik tok" className='w-15 h-15 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 cursor-pointer' />
+                <a href={buttonsLinks.tiktok} target="_blank" rel="noopener noreferrer">
+                  <Image src="/Button_Tik_tok.png" alt="Tik tok" width={300} height={300} className='w-15 h-15 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 cursor-pointer' />
                 </a>
-                <a href="https://www.tiktok.com/@7cielos.rooftop?lang=es" target="_blank">
-                  <img src="/Button_Instagram.png" alt="Instagram" className='w-15 h-15 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 cursor-pointer' />
+                <a href={buttonsLinks.instagram} target="_blank" rel="noopener noreferrer">
+                  <Image src="/Button_Instagram.png" alt="Instagram" width={300} height={300} className='w-15 h-15 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 cursor-pointer' />
                 </a>
               </div>
             </div>
@@ -217,10 +236,10 @@ export default function Home() {
         <section id="politicas" className="w-full bg-background-secondary flex flex-col items-center justify-center w-full gap-8 pt-20 sm:py-30 p-10">
           <div className="flex gap-2 lg:gap-5">
             <span className="w-5 h-0 border-primary border-1 mt-5 sm:mt-8 lg:w-13 "></span>
-            <p className="font-medium font-theseason-italic text-5xl text-center mb-7 px-5 sm:text-8xl sm:text-left">
+            <h2 className="font-medium font-theseason-italic text-5xl text-center mb-7 px-5 sm:text-8xl sm:text-left">
               Politica de privacidad <br />
               y tratamiento de datos
-            </p>
+            </h2>
           </div>
           <ul className="flex flex-col gap-7">
             <li className="text-gotham text-medium text-xs/6 sm:text-base/6">

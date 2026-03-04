@@ -107,8 +107,25 @@ const theSeasonsItalic = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "7 Cielos Roof Top Gastrobar",
-  description: "Mejor rooftop de la ciudad",
+  title: "7 Cielos Rooftop Gastrobar | Cartagena",
+  description: "Descubre el mejor rooftop en Bocagrande, Cartagena. Gastronomía fusión, coctelería de autor, atardeceres mágicos y el mejor ambiente.",
+  keywords: ["rooftop cartagena", "restaurante bocagrande", "cocteles cartagena", "7 cielos rooftop", "restaurante vista cartagena"],
+  openGraph: {
+    title: "7 Cielos Rooftop Gastrobar | Cartagena",
+    description: "Gastronomía fusión, coctelería de autor y atardeceres mágicos en Bocagrande.",
+    url: "https://www.7cielos.com",
+    siteName: "7 Cielos Rooftop",
+    images: [
+      {
+        url: "/IMG_Principal.png",
+        width: 1200,
+        height: 630,
+        alt: "Vista principal de 7 Cielos Rooftop en Cartagena",
+      },
+    ],
+    locale: "es_CO",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
@@ -117,7 +134,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="scroll-smooth">
+    <html lang="es-CO" className="scroll-smooth">
       <body
         className={`${gotham.variable} ${theSeasons.variable} ${gothamItalic.variable} ${theSeasonsItalic.variable} antialiased text-background z-0 w-full`}
       >
