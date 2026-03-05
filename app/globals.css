@@ -10,7 +10,7 @@
   --font-gotham: var(--font-gotham);
   --font-theseason: var(--font-theseason);
   --font-gotham-italic: var(--font-gotham-italic);
-  --font-theseason-italic: var(--font-theseason-italic);
+  --font-theseason-italic: var(--font-bodoni);
   --nav-width: 80vw;
 
 }
@@ -23,7 +23,7 @@
   --font-gotham: var(--font-gotham); 
   --font-theseason: var(--font-theseason);
   --font-gotham-italic: var(--font-gotham-italic);
-  --font-theseason-italic: var(--font-theseason-italic)
+  --font-theseason-italic: var(--font-bodoni);
 
 }
 /* @media (prefers-color-scheme: dark) {
@@ -34,6 +34,7 @@
 } */
 
 body {
-  
   color: var(--text);
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
 }

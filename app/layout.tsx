@@ -1,6 +1,15 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
+import { Bodoni_Moda } from 'next/font/google'
 import "./globals.css";
+
+const bodoni = Bodoni_Moda({
+  subsets: ['latin'],
+  display: 'swap',
+  style: ['italic'], // Solo cargamos la itálica si es la que necesitas
+  variable: '--font-bodoni', // Variable para Tailwind
+  weight: '400', // Puedes añadir '700' si necesitas negrita itálica
+})
 
 const gotham = localFont({
   src: [
