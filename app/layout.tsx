@@ -145,7 +145,7 @@ export default function RootLayout({
   return (
     <html lang="es-CO" className="scroll-smooth">
       <body
-        className={`${gotham.variable} ${theSeasons.variable} ${gothamItalic.variable} ${theSeasonsItalic.variable} ${bodoni.variable} antialiased md:subpixel-antialiased text-background z-0 w-full`}
+        className={`${gotham.variable} ${theSeasons.variable} ${gothamItalic.variable} ${theSeasonsItalic.variable} ${bodoni.variable} relativeantialiased md:subpixel-antialiased text-background z-0 w-full`}
       >
         {children}
       </body>

@@ -3,11 +3,19 @@ import Button from "@/components/Button";
 import Form from "@/components/form";
 import Footer from "@/components/Footer";
 import Image from "next/image";
+import ImagesCard from "@/components/ImagesCard";
+
+export interface HomeSection {
+    img1: string;
+    img2: string;
+    img3: string;
+    img4: string;
+}
 
 export default function Home() {
 
-  const homeSection = {
-    img1: "/IMG_Experiencias 1.png",
+  const homeSection: HomeSection = {
+    img1: "/IMG_Experiencias 1.png",  
     img2: "/IMG_Experiencias 2.png",
     img3: "/IMG_Experiencias 3.png",
     img4: "/IMG_Experiencias 4.png",
@@ -71,13 +79,8 @@ export default function Home() {
               EN 7 CIELOS ROOFTOP FUSIONAMOS GASTRONOMÍAS INTERNACIONALES Y COCTELERÍA DE AUTOR CON UN <br />
               AMBIENTE VIBRANTE Y VISTAS ÚNICAS DE CARTAGENA. CADA VISITA ES UN MOMENTO PARA RECORDAR.
             </p>
-            <div className="flex justify-center flex-nowrap w-full sm:flex-wrap mt-10">
-              <div className="flex overflow-x-auto gap-5 px-4">
-                {Object.values(homeSection).map((img, index) => (
-                  <Image key={index} src={img} alt={`Experiencia en 7 Cielos Rooftop ${index + 1}`} className="w-70 h-auto sm:w-90" width={500} height={500} />
-                ))}
-              </div>
-            </div>
+            
+            <ImagesCard homeSection={homeSection} />
 
             <div className="flex flex-col gap-20 w-full mt-15 mb-25 xl:mt-25 xl:mb-40">
               <div className="flex flex-wrap items-center justify-center gap-15 w-full xl:gap-40">
