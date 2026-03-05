@@ -5,14 +5,14 @@
   --primamry: #E7C36A;
   --background: #000000;
   --background-secondary: #232323;
-  --header: rgb(0,0,0,0.9);
+  --header: rgb(0, 0, 0, 0.9);
   --text: white;
   --font-gotham: var(--font-gotham);
   --font-theseason: var(--font-theseason);
   --font-gotham-italic: var(--font-gotham-italic);
   --font-theseason-italic: var(--font-bodoni);
+  /* Cambiado a bodoni o theSeasonsItalic según preferencia */
   --nav-width: 80vw;
-
 }
 
 @theme {
@@ -20,21 +20,22 @@
   --color-background: var(--background);
   --color-background-secondary: var(--background-secondary);
   --color-primary: var(--primamry);
-  --font-gotham: var(--font-gotham); 
+  --font-gotham: var(--font-gotham);
   --font-theseason: var(--font-theseason);
   --font-gotham-italic: var(--font-gotham-italic);
   --font-theseason-italic: var(--font-bodoni);
-
 }
-/* @media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-} */
+
+/* Solución Safari: Safari es estricto con las reglas de font-style cuando la arroba (@font-face) las exige. */
+.font-gotham-italic,
+.font-theseason-italic {
+  font-style: italic;
+}
 
 body {
   color: var(--text);
   text-rendering: optimizeLegibility;
   -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  /* Recomendado para Safari */
 }
