@@ -14,7 +14,7 @@ export default function ImagesCard({ homeSection }: { homeSection: HomeSection }
                     <Image onClick={()=> setCarouselOpen(!carouselOpen)} key={index} src={img} alt={`Experiencia en 7 Cielos Rooftop ${index + 1}`} className="w-70 h-auto sm:w-90" width={500} height={500} />
                 ))}
             </div>
-            {carouselOpen && <CarouselImg homeSection={homeSection} state={carouselOpen}/>}
+            {carouselOpen && <CarouselImg homeSection={homeSection} state={carouselOpen} closeCarousel={() => setCarouselOpen(!carouselOpen)}/>}
         </div>
     )
 }
