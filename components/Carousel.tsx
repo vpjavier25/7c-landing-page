@@ -32,6 +32,7 @@ export default function CarouselImg({ homeSection, state, closeCarousel }: { hom
       <Carousel ref={carouselRef} opts={{
         align: "start",
         loop: true,
+        dragFree: true,
       }} className="w-full  max-w-[20rem] sm:max-w-sm lg:max-w-lg z-50">
         <CarouselContent>
           {Object.values(homeSection).map((img, index) => (

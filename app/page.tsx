@@ -36,7 +36,7 @@ export default function Home() {
     contactoWhatsapp: "https://api.whatsapp.com/send?phone=573008663045",
     tiktok: "https://www.tiktok.com/@7cielos.rooftop?lang=es",
     instagram: "https://www.instagram.com/7cielos_rooftop/?hl=es",
-    contactoEmail: "[EMAIL_ADDRESS]"
+    contactoEmail: "comercial@atrium.com.co"
   }
 
 
@@ -214,7 +214,7 @@ export default function Home() {
                 <a href={`mailto:${buttonsLinks.contactoEmail}`} target="_blank" rel="noopener noreferrer">
                   <Image src="/icons8-mensaje-48.png" alt="Mensaje" width={300} height={300} className='w-10 h-10 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 cursor-pointer' />
                 </a>
-                <span>CONTACTO@7CIELOS.COM</span>
+                <span>{buttonsLinks.contactoEmail.toUpperCase()}</span>
               </div>
             </div>
             <div className="flex w-auto flex-wrap justify-center items-center gap-3 font-gotham text-base pt-20 sm:text-xl">
