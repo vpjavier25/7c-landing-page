@@ -18,7 +18,7 @@
   --font-theseason-italic: var(--font-bodoni);
   --background-carousel: rgba(0, 0, 0, 0.7);
   /* Cambiado a bodoni o theSeasonsItalic según preferencia */
-  --nav-width: 55vw;
+  --nav-width: 60vw;
   --radius: 0.625rem;
   /* --background: oklch(1 0 0); */
   --foreground: oklch(0.145 0 0);
@@ -63,6 +63,7 @@
   --font-gotham-italic: var(--font-gotham-italic);
   --font-theseason-italic: var(--font-bodoni);
   --color-carousel: var(--background-carousel);
+  --breakpoint-spe: 62rem;
 }
 
 /* Solución Safari: Safari es estricto con las reglas de font-style cuando la arroba (@font-face) las exige. */

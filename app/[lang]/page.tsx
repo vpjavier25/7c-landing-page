@@ -106,13 +106,13 @@ export default async function Home({ params }: { params: Promise<{ lang: string 
                 </div>
                 <Image src="/IMG_Sabores y Aroma.png" alt="Plato de gastronomía fusión en 7 Cielos" className="w-70 h-auto sm:w-90" width={500} height={500} />
               </div>
-              <div className="flex flex-wrap flex-col-reverse justify-center items-center gap-20 xl:flex-row">
+              <div className="flex flex-wrap flex-col-reverse w-full justify-center items-center gap-20  spe:flex-row">
                 <Image src="/IMG_Vibra y Ritmo.png" alt="Dj en vivo y ambiente de fiesta en rooftop Cartagena" className="w-70 h-auto sm:w-90" width={500} height={500} />
                 <div className="flex flex-col items-center gap-10 xl:items-end">
-                  <h3 className="font-theseason-italic font-medium text-5xl text-center sm:text-6xl md:text-7xl xl:text-8xl xl:text-right">
+                  <h3 className="font-theseason-italic font-medium text-4xl text-center sm:text-6xl md:text-7xl xl:text-8xl xl:text-right">
                     {dictionary.vibra.title.part1} <br />{dictionary.vibra.title.part2}
                   </h3>
-                  <p className="font-medium font-gotham text-xs/6 text-center  sm:text-md/6 xl:text-base/6 xl:text-right">
+                  <p className="font-medium font-gotham text-xs/6 text-center sm:text-md/6 xl:text-base/6 xl:text-right">
                     {dictionary.vibra.subtitlePart1} <br />
                     {dictionary.vibra.subtitlePart2} <br />
                     {dictionary.vibra.subtitlePart3}<br />

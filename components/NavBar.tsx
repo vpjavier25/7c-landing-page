@@ -42,7 +42,7 @@ export default function NavBar() {
                     <Image src="/logo.png" alt="Logo" width={150} height={100} />
                 </a>
 
-                <nav className={`relative flex items-center lg:w-[var(--nav-width)]  justify-end lg:justify-around pr-5 sm:p-4 font-gotham font-medium ${isScrolled ? "lg:w-[var(--nav-width)]" : ""}`}>
+                <nav className={`relative flex items-center lg:w-[var(--nav-width)] justify-end lg:justify-around pr-5 sm:p-4 font-gotham font-medium ${isScrolled ? "lg:w-[var(--nav-width)]" : ""}`}>
                     <ul className="hidden text-sm lg:w-full lg:flex lg:flex-wrap lg:justify-around lg:text-gray-400">
                         <a href="#home" className='nav-link' ><li className="hover:text-white transition-colors cursor-pointer hover:underline hover:decoration-[var(--primamry)] hover:decoration-2 hover:underline-offset-4">HOME</li></a>
                         <a href="#menu" className='nav-link' onClick={() => setIsMenuOpen(!isMenuOpen)}><li className="hover:text-white transition-colors cursor-pointer hover:underline hover:decoration-[var(--primamry)] hover:decoration-2 hover:underline-offset-4">MENÚ</li></a>
