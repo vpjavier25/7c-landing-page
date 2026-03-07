@@ -6,8 +6,6 @@ import Image from "next/image";
 import ImagesCard from "@/components/ImagesCard";
 import { notFound } from 'next/navigation'
 import { getDictionary, hasLocale } from './dictionaries'
-import LanguageSwitcher from "@/components/LanguageSwitcher";
-
 
 export interface HomeSection {
   img1: string;

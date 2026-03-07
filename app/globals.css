@@ -18,7 +18,7 @@
   --font-theseason-italic: var(--font-bodoni);
   --background-carousel: rgba(0, 0, 0, 0.7);
   /* Cambiado a bodoni o theSeasonsItalic según preferencia */
-  --nav-width: 75vw;
+  --nav-width: 55vw;
   --radius: 0.625rem;
   /* --background: oklch(1 0 0); */
   --foreground: oklch(0.145 0 0);
