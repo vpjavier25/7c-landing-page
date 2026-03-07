@@ -8,7 +8,7 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel"
 import Image from "next/image"
-import { HomeSection } from "@/app/page"
+import { HomeSection } from "@/app/[lang]/page"
 
 export default function CarouselImg({ homeSection, state, closeCarousel }: { homeSection: HomeSection, state: boolean, closeCarousel: () => void }) {
 
@@ -32,8 +32,8 @@ export default function CarouselImg({ homeSection, state, closeCarousel }: { hom
       <Carousel ref={carouselRef} opts={{
         align: "start",
         loop: true,
-      }} 
-      className="w-full  max-w-[20rem] sm:max-w-sm lg:max-w-lg z-50">
+      }}
+        className="w-full  max-w-[20rem] sm:max-w-sm lg:max-w-lg z-50">
         <CarouselContent>
           {Object.values(homeSection).map((img, index) => (
             <CarouselItem key={index}>

@@ -1,0 +1,131 @@
+{
+    "home": {
+        "title": {
+            "part1": "Vive sabores, vistas y ",
+            "part2": "momentos inolvidables"
+        },
+        "subtitlePart1": "DESCUBRE UN ROOFTOP ÚNICO EN CARTAGENA CON GASTRONOMÍA FUSIÓN COCTELES DE ",
+        "subtitlePart2": "AUTOR, ATARDECERES MÁGICOS Y NOCHES MUY CERCA DEL CIELO",
+        "buttons": {
+            "reservarAhora": "RESERVAR AHORA",
+            "verMenu": "VER MENÚ"
+        }
+    },
+    "trasciende": {
+        "title": {
+            "part1": "Un lugar que ",
+            "part2": "trasciende",
+            "part3": " la ",
+            "part4": "experiencia ",
+            "part5": "gastronómica"
+        },
+        "subtitlePart1": "EN 7 CIELOS ROOFTOP FUSIONAMOS GASTRONOMÍAS INTERNACIONALES Y COCTELERÍA DE AUTOR CON UN",
+        "subtitlePart2": "AMBIENTE VIBRANTE Y VISTAS ÚNICAS DE CARTAGENA. CADA VISITA ES UN MOMENTO PARA RECORDAR."
+    },
+    "sabores": {
+        "title": {
+            "part1": "Sabores, aromas,",
+            "part2": "momentos",
+            "part3": "."
+        },
+        "subtitlePart1": "DESDE ENTRADAS SORPRENDENTES HASTA PLATOS PRINCIPALES",
+        "subtitlePart2": "LLENOS DE PERSONALIDAD - Y COCTELES QUE CUENTAN HISTORIAS",
+        "subtitlePart3": "7 CIELOS S EL PLAN PERFFECTO PARA CADA OCASIÓN: CITA",
+        "subtitlePart4": "ROMÁNTICA, CELEBRACIÓN CON AMIGOS O CENA CON VISTA.",
+        "buttons": {
+            "descubreMas": "DESCUBRE MÁS"
+        }
+    },
+    "vibra": {
+        "title": {
+            "part1": "Vibra",
+            "part2": "y ritmo"
+        },
+        "subtitlePart1": "VIVE LA ENERGIA DE NUESTROS",
+        "subtitlePart2": "ATARDECERES Y LAS MÁGICAS NOCHES CON",
+        "subtitlePart3": "MÚSICA EN VIVO, DJS Y EVENTOS ESPECIALES.",
+        "subtitlePart4": "PARA QUE CADA VISITA SEA ÚNICA.",
+        "buttons": {
+            "reservaEvento": "RESERVA TU EVENTO"
+        }
+    },
+    "reservar": {
+        "title": "Reservar es facil y rapido.",
+        "subtitle": "ELIGE TU FECHA, HORA Y PERSONALIZA TU PLAN.",
+        "buttons": {
+            "reservarAhora": "RESERVAR AHORA",
+            "whatsapp": "CONTÁCTANOS POR WHATSAPP"
+        }
+    },
+    "menu": {
+        "title": {
+            "part1": "Explora ",
+            "part2": "nuestros platos",
+            "part3": "cuidadosamente seleccionados"
+        },
+        "subtitlePart1": "PARA OFRECERTE UNA EXPERIANCIA INOLVIDABLE: SABORES LOCALES CON TOQUES",
+        "subtitlePart2": "INTERACIONALES, INGREDIENTES FRESCOS Y CREATIVIDAD EN CADA BOCADO."
+    },
+    "ubicacion": {
+        "title": {
+            "part1": "Estamos ubicados en el exclusivo ",
+            "part2": "sector ",
+            "part3": "Bocagrande",
+            "part4": ", en Cartagena"
+        },
+        "subtitle": "CON UNA VISTA ÚNICA DE SU BAHÍA Y ATARDECERES ESPECTACULARES.",
+        "info": {
+            "direccionLabel": "DIRECCIÓN:",
+            "direccionText1": "CRA. 3 #10-59, PISO 6, BOCAGRANDE -",
+            "direccionText2": "CARTAGENA, COLOMBIA",
+            "horarioLabel": "HORARIO:",
+            "horarioText1": "LUNES - JUEVES 4:00 PM - 12:00 AM",
+            "horarioText2": "VIERNES - DOMINGO 4:00 PM - 2:00 AM"
+        }
+    },
+    "contacto": {
+        "title": "Hablemos",
+        "subtitle": {
+            "highlight": "¿TIENES DUDAS O QUIERES RESERVAR UN",
+            "highlight2": "EVENTO PRIVADO?",
+            "normal": "CONTACTANOS Y NUESTRO",
+            "normal2": "EQUIPO ESTARA ENCANTADO DE AYUDARTE"
+        },
+        "infoDirecta": "Info directa",
+        "siguenos": "Siguenos en"
+    },
+    "politicas": {
+        "title": {
+            "part1": "Politica de privacidad",
+            "part2": "y tratamiento de datos"
+        },
+        "items": {
+            "1": {
+                "text1": "EN CUMPLIMIENTO DE LA LEGISLACIÓN COLOMBIANA (LEY 1581 DE 2012) Y OTRAS NORMAS DE PROTECCIÓN DE DATOS APLICABLES, EN 7",
+                "text2": "CIELOS ROOFTOP GARANTIZAMOS LA TRANSPARENCIA EN LA RECOLECCIÓN, USO, ALMACENAMIENTO Y PROTECCIÓN DE TUS DATOS",
+                "text3": "PERSONALES."
+            },
+            "2": {
+                "bold": "DATOS RECOLECTADOS:",
+                "text1": " NOMBRE, EMAIL, TELÉFONO Y CUALQUIER INFORMACIÓN QUE NOS PROPORCIONES VOLUNTARIAMENTE A",
+                "text2": "TRAVÉS DE FORMULARIOS DE CONTACTO O RESERVAS EN LÍNEA."
+            },
+            "3": {
+                "bold": "FINALIDAD:",
+                "text": " GESTIONAR RESERVAS, RESPONDER CONSULTAS, ENVIARTE INFORMACIÓN RELEVANTE Y MEJORAR TU EXPERIENCIA."
+            },
+            "4": {
+                "bold": "CONSENTIMIENTO:",
+                "text": " AL USAR NUESTROS FORMULARIOS Y SERVICIOS ACEPTAS ESTA POLÍTICA."
+            },
+            "5": {
+                "bold": "PROTECCIÓN:",
+                "text": " TUS DATOS SE RESGUARDAN CON MEDIDAS DE SEGURIDAD RAZONABLES Y NO SERÁN VENDIDOS A TERCEROS."
+            },
+            "6": {
+                "bold": "DERECHOS DEL TITULAR:",
+                "text": " PUEDES ACCEDER, RECTIFICAR, ACTUALIZAR Y SOLICITAR ELIMINACIÓN DE TUS DATOS CUANDO LO REQUIERAS."
+            }
+        }
+    }
+}

@@ -1,0 +1,131 @@
+{
+    "home": {
+        "title": {
+            "part1": "Experience flavors, views and ",
+            "part2": "unforgettable moments"
+        },
+        "subtitlePart1": "DISCOVER A UNIQUE ROOFTOP IN CARTAGENA WITH FUSION GASTRONOMY, SIGNATURE COCKTAILS, ",
+        "subtitlePart2": "MAGICAL SUNSETS AND NIGHTS VERY CLOSE TO THE SKY",
+        "buttons": {
+            "reservarAhora": "BOOK NOW",
+            "verMenu": "VIEW MENU"
+        }
+    },
+    "trasciende": {
+        "title": {
+            "part1": "A place that ",
+            "part2": "transcends",
+            "part3": " the ",
+            "part4": "gastronomic ",
+            "part5": "experience"
+        },
+        "subtitlePart1": "AT 7 CIELOS ROOFTOP WE FUSE INTERNATIONAL GASTRONOMY AND SIGNATURE COCKTAILS WITH A",
+        "subtitlePart2": "VIBRANT ATMOSPHERE AND UNIQUE VIEWS OF CARTAGENA. EVERY VISIT IS A MOMENT TO REMEMBER."
+    },
+    "sabores": {
+        "title": {
+            "part1": "Flavors, aromas,",
+            "part2": "moments",
+            "part3": "."
+        },
+        "subtitlePart1": "FROM SURPRISING APPETIZERS TO PERSONALITY-FILLED",
+        "subtitlePart2": "MAIN COURSES - AND COCKTAILS THAT TELL STORIES",
+        "subtitlePart3": "7 CIELOS IS THE PERFECT PLAN FOR EVERY OCCASION: ROMANTIC",
+        "subtitlePart4": "DATE, CELEBRATION WITH FRIENDS OR A DINNER WITH A VIEW.",
+        "buttons": {
+            "descubreMas": "DISCOVER MORE"
+        }
+    },
+    "vibra": {
+        "title": {
+            "part1": "Vibe",
+            "part2": "and rhythm"
+        },
+        "subtitlePart1": "EXPERIENCE THE ENERGY OF OUR",
+        "subtitlePart2": "SUNSETS AND MAGICAL NIGHTS WITH",
+        "subtitlePart3": "LIVE MUSIC, DJS AND SPECIAL EVENTS.",
+        "subtitlePart4": "SO EVERY VISIT IS UNIQUE.",
+        "buttons": {
+            "reservaEvento": "BOOK YOUR EVENT"
+        }
+    },
+    "reservar": {
+        "title": "Booking is easy and fast.",
+        "subtitle": "CHOOSE YOUR DATE, TIME AND PERSONALIZE YOUR PLAN.",
+        "buttons": {
+            "reservarAhora": "BOOK NOW",
+            "whatsapp": "CONTACT US VIA WHATSAPP"
+        }
+    },
+    "menu": {
+        "title": {
+            "part1": "Explore ",
+            "part2": "our dishes",
+            "part3": "carefully selected"
+        },
+        "subtitlePart1": "TO OFFER YOU AN UNFORGETTABLE EXPERIENCE: LOCAL FLAVORS WITH INTERNATIONAL",
+        "subtitlePart2": "TOUCHES, FRESH INGREDIENTS AND CREATIVITY IN EVERY BITE."
+    },
+    "ubicacion": {
+        "title": {
+            "part1": "We are located in the exclusive ",
+            "part2": "sector ",
+            "part3": "Bocagrande",
+            "part4": ", in Cartagena"
+        },
+        "subtitle": "WITH A UNIQUE VIEW OF ITS BAY AND SPECTACULAR SUNSETS.",
+        "info": {
+            "direccionLabel": "ADDRESS:",
+            "direccionText1": "CRA. 3 #10-59, 6TH FLOOR, BOCAGRANDE -",
+            "direccionText2": "CARTAGENA, COLOMBIA",
+            "horarioLabel": "SCHEDULE:",
+            "horarioText1": "MONDAY - THURSDAY 4:00 PM - 12:00 AM",
+            "horarioText2": "FRIDAY - SUNDAY 4:00 PM - 2:00 AM"
+        }
+    },
+    "contacto": {
+        "title": "Let's talk",
+        "subtitle": {
+            "highlight": "HAVE QUESTIONS OR WANT TO BOOK A",
+            "highlight2": "PRIVATE EVENT?",
+            "normal": "CONTACT US AND OUR",
+            "normal2": "TEAM WILL BE HAPPY TO HELP YOU"
+        },
+        "infoDirecta": "Direct info",
+        "siguenos": "Follow us on"
+    },
+    "politicas": {
+        "title": {
+            "part1": "Privacy policy",
+            "part2": "and data processing"
+        },
+        "items": {
+            "1": {
+                "text1": "IN COMPLIANCE WITH COLOMBIAN LEGISLATION (LAW 1581 OF 2012) AND OTHER APPLICABLE DATA PROTECTION REGULATIONS, AT 7",
+                "text2": "CIELOS ROOFTOP WE GUARANTEE TRANSPARENCY IN THE COLLECTION, USE, STORAGE AND PROTECTION OF YOUR PERSONAL",
+                "text3": "DATA."
+            },
+            "2": {
+                "bold": "COLLECTED DATA:",
+                "text1": " NAME, EMAIL, PHONE AND ANY INFORMATION YOU VOLUNTARILY PROVIDE US THROUGH",
+                "text2": "CONTACT OR ONLINE RESERVATION FORMS."
+            },
+            "3": {
+                "bold": "PURPOSE:",
+                "text": " MANAGE RESERVATIONS, ANSWER INQUIRIES, SEND YOU RELEVANT INFORMATION AND IMPROVE YOUR EXPERIENCE."
+            },
+            "4": {
+                "bold": "CONSENT:",
+                "text": " BY USING OUR FORMS AND SERVICES YOU ACCEPT THIS POLICY."
+            },
+            "5": {
+                "bold": "PROTECTION:",
+                "text": " YOUR DATA IS SAFEGUARDED WITH REASONABLE SECURITY MEASURES AND WILL NOT BE SOLD TO THIRD PARTIES."
+            },
+            "6": {
+                "bold": "DATA SUBJECT RIGHTS:",
+                "text": " YOU CAN ACCESS, RECTIFY, UPDATE AND REQUEST DELETION OF YOUR DATA WHENEVER YOU REQUIRE."
+            }
+        }
+    }
+}
