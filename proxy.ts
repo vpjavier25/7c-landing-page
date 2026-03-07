@@ -7,7 +7,7 @@ let locales = ['en-US', 'es-CO']
 
 // Get the preferred locale, similar to the above or using a library
 function getLocale(request: NextRequest) {
-    let headers = { 'accept-language': `${request.headers.get("accept-language")}`}
+    let headers = { 'accept-language': `${request.headers.get("accept-language")}` }
     let languages = new Negotiator({ headers }).languages()
     let locales = ['en-US', 'es-CO']
     let defaultLocale = 'es-CO'
@@ -34,9 +34,7 @@ export function proxy(request: NextRequest) {
 
 export const config = {
     matcher: [
-        // Skip all internal paths (_next)
-        '/((?!_next).*)',
-        // Optional: only run on root (/) URL
-        // '/'
+        // Skip all internal paths (_next), API routes, and static files like images
+        '/((?!api|_next/static|_next/image|favicon.ico|.*\\.(?:svg|png|jpg|jpeg|gif|webp)$).*)',
     ],
 }
