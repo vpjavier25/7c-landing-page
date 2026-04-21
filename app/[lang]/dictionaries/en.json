@@ -68,19 +68,18 @@
     },
     "ubicacion": {
         "title": {
-            "part1": "We are located in the exclusive ",
-            "part2": "sector ",
-            "part3": "Bocagrande",
-            "part4": ", in Cartagena"
+            "part1": "We are located in",
+            "part2": "Bocagrande",
+            "part3": ", in Cartagena"
         },
         "subtitle": "WITH A UNIQUE VIEW OF ITS BAY AND SPECTACULAR SUNSETS.",
         "info": {
             "direccionLabel": "ADDRESS:",
-            "direccionText1": "CRA. 3 #10-59, 6TH FLOOR, BOCAGRANDE -",
+            "direccionText1": "CRA. 3 #10-59, 7TH FLOOR, BOCAGRANDE -",
             "direccionText2": "CARTAGENA, COLOMBIA",
             "horarioLabel": "SCHEDULE:",
-            "horarioText1": "MONDAY - THURSDAY 4:00 PM - 12:00 AM",
-            "horarioText2": "FRIDAY - SUNDAY 4:00 PM - 2:00 AM"
+            "horarioText1": "SUNDAY - THURSDAY 4:00 PM - 12:00 AM",
+            "horarioText2": "FRIDAY - SATURDAY 4:00 PM - 2:00 AM"
         }
     },
     "contacto": {

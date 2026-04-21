@@ -12,7 +12,7 @@ const Button = ({ children, ...props }: Props) => {
 
     const buttonStyles = {
         dark: "bg-primary text-background px-4 py-2 font-gotham font-medium border-solid border-2 px-8 py-3 cursor-pointer hover:bg-primary/80 transition-colors text-xs/6",
-        light: "bg-background text-white px-4 py-2 border-primary border-solid border-2 px-8 py-3 cursor-pointer hover:bg-primary/80 transition-colors text-xs/6",
+        light: "bg-background text-white px-4 py-2 font-gotham border-primary border-solid border-2 px-8 py-3 cursor-pointer hover:bg-primary/80 transition-colors text-xs/6",
     }
 
     return (

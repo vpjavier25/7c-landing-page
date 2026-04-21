@@ -68,19 +68,18 @@
     },
     "ubicacion": {
         "title": {
-            "part1": "Estamos ubicados en el exclusivo ",
-            "part2": "sector ",
-            "part3": "Bocagrande",
-            "part4": ", en Cartagena"
+            "part1": "Estamos ubicados en",
+            "part2": "Bocagrande",
+            "part3": ", en Cartagena"
         },
         "subtitle": "CON UNA VISTA ÚNICA DE SU BAHÍA Y ATARDECERES ESPECTACULARES.",
         "info": {
             "direccionLabel": "DIRECCIÓN:",
-            "direccionText1": "CRA. 3 #10-59, PISO 6, BOCAGRANDE -",
+            "direccionText1": "CRA. 3 #10-59, PISO 7, BOCAGRANDE -",
             "direccionText2": "CARTAGENA, COLOMBIA",
             "horarioLabel": "HORARIO:",
-            "horarioText1": "LUNES - JUEVES 4:00 PM - 12:00 AM",
-            "horarioText2": "VIERNES - DOMINGO 4:00 PM - 2:00 AM"
+            "horarioText1": "DOMINGO - JUEVES 4:00 PM - 12:00 AM",
+            "horarioText2": "VIERNES - SABADO 4:00 PM - 2:00 AM"
         }
     },
     "contacto": {
