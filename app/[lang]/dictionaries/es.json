@@ -1,4 +1,7 @@
 {
+    "bookButton":{
+        "reservarAhora":"Reservar"
+    },
     "home": {
         "title": {
             "part1": "Vive sabores, vistas y ",

@@ -9,10 +9,10 @@ import { notFound } from 'next/navigation'
 import { getDictionary, hasLocale } from './dictionaries'
 
 export interface HomeSection {
-  img1: string;
-  img2: string;
-  img3: string;
-  img4: string;
+  img1: String[];
+  img2: String[];
+  img3: String[];
+  img4: String[];
 }
 
 export default async function Home({ params }: { params: Promise<{ lang: string }> }) {
@@ -24,10 +24,10 @@ export default async function Home({ params }: { params: Promise<{ lang: string 
   const dictionary = await getDictionary(lang)
 
   const homeSection: HomeSection = {
-    img1: "/IMG_Experiencias 2.png",
-    img2: "/IMG_Experiencias 1.png",
-    img3: "/IMG_Experiencias 3.png",
-    img4: "/IMG_Experiencias 4.png",
+    img1: ["/IMG_Experiencias 2.png",""],
+    img2: ["/IMG_Experiencias 1.png",""],
+    img3: ["/IMG_Experiencias 3.png",""],
+    img4: ["/IMG_Experiencias 4.png",""],
   }
 
   const menuSection = {
@@ -52,7 +52,9 @@ export default async function Home({ params }: { params: Promise<{ lang: string 
   return (
     <div className="flex flex-col w-full relative">
       
-      <CallToActionButton/>
+      <CallToActionButton>
+        {dictionary.bookButton.reservarAhora}
+      </CallToActionButton>
 
 
       <NavBar />
@@ -154,13 +156,7 @@ export default async function Home({ params }: { params: Promise<{ lang: string 
               {dictionary.menu.subtitlePart1}<br />
               {dictionary.menu.subtitlePart2}
             </p>
-            <div className="flex flex-wrap gap-5 mt-10 justify-center">
-              {Object.values(menuSection).map((img, index) => (
-                <a key={index} href={img[1]} target="_blank" rel="noopener noreferrer">
-                  <Image src={img[0]} alt={`Sección del menú ${index + 1}`} className="w-70 h-auto sm:w-90 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-105 cursor-pointer" width={500} height={500} />
-                </a>
-              ))}
-            </div>
+          <ImagesCard homeSection={menuSection}/>
           </div>
         </section>
         <section id="ubicacion" className="flex flex-col items-center justify-center w-full gap-8 pt-20 px-10 bg-background">

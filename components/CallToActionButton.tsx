@@ -1,7 +1,7 @@
 "use client"
-import { useEffect, useState } from "react"
+import { useEffect, useState, ReactNode } from "react"
 
-const CallToActionButton = () => {
+const CallToActionButton = ({ children }: { children: ReactNode }) => {
 
     const [hidden, setHidden] = useState(false)
 
@@ -26,7 +26,7 @@ const CallToActionButton = () => {
     }, [])
 
     return (
-        <a href="#reservar">
+        <a href="https://www.apparta.co/7-cielos/reservas?utm_medium=instagram" target="_blank">
             <button
                 className={`flex gap-2 fixed bottom-3 right-3 z-50 
                 bg-primary text-background font-gotham font-medium border-2 px-4 py-2 
@@ -38,7 +38,7 @@ const CallToActionButton = () => {
                 ${hidden ? "translate-y-20 opacity-0" : "translate-y-0 opacity-100"}
                 `}
             >
-                Reservar
+                {children}
 
                 <svg xmlns="http://www.w3.org/2000/svg" fill="#000" viewBox="0 0 24 24" className="size-6">
                     <path d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />

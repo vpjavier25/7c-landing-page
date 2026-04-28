@@ -48,7 +48,6 @@ export default function NavBar() {
                         <a href="#menu" className='nav-link' onClick={() => setIsMenuOpen(!isMenuOpen)}><li className="hover:text-white transition-colors cursor-pointer hover:underline hover:decoration-[var(--primamry)] hover:decoration-2 hover:underline-offset-4">MENÚ</li></a>
                         <a href="#ubicacion" className='nav-link'><li className="hover:text-white transition-colors cursor-pointer hover:underline hover:decoration-[var(--primamry)] hover:decoration-2 hover:underline-offset-4">UBICACIÓN</li></a>
                         <a href="#contacto" className='nav-link'><li className="hover:text-white transition-colors cursor-pointer hover:underline hover:decoration-[var(--primamry)] hover:decoration-2 hover:underline-offset-4">CONTACTO</li></a>
-                        <a href="#politicas" className='nav-link'><li className="hover:text-white transition-colors cursor-pointer hover:underline hover:decoration-[var(--primamry)] hover:decoration-2 hover:underline-offset-4">POLÍTICAS DE PRIVACIDAD</li></a>
                     </ul>
                     <button className={`lg:hidden flex flex-col gap-1 z-200`} onClick={() => setIsMenuOpen(!isMenuOpen)}>
                         <span className={`w-10 h-1 bg-white transition duration-300 ease-in-out ${isMenuOpen ? 'rotate-45 translate-y-2' : ''}`}></span>
@@ -72,7 +71,6 @@ export default function NavBar() {
                         <a href="#menu" className='nav-link' onClick={() => setIsMenuOpen(!isMenuOpen)}><li className="hover:text-white transition-colors cursor-pointer hover:underline hover:decoration-[var(--primamry)] hover:decoration-2 hover:underline-offset-4">MENÚ</li></a>
                         <a href="#ubicacion" className='nav-link' onClick={() => setIsMenuOpen(!isMenuOpen)}><li className="hover:text-white transition-colors cursor-pointer hover:underline hover:decoration-[var(--primamry)] hover:decoration-2 hover:underline-offset-4">UBICACIÓN</li></a>
                         <a href="#contacto" className='nav-link' onClick={() => setIsMenuOpen(!isMenuOpen)}><li className="hover:text-white transition-colors cursor-pointer hover:underline hover:decoration-[var(--primamry)] hover:decoration-2 hover:underline-offset-4">CONTACTO</li></a>
-                        <a href="#politicas" className='nav-link' onClick={() => setIsMenuOpen(!isMenuOpen)}><li className="hover:text-white transition-colors cursor-pointer hover:underline hover:decoration-[var(--primamry)] hover:decoration-2 hover:underline-offset-4">POLÍTICAS DE PRIVACIDAD</li></a>
                     </ul>
                 </>
             )}

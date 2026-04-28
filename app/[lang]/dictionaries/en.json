@@ -1,4 +1,7 @@
 {
+    "bookButton":{
+        "reservarAhora":"Book Now"
+    },
     "home": {
         "title": {
             "part1": "Experience flavors, views and ",
