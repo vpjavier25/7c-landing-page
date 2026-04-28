@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
-import { Bodoni_Moda } from 'next/font/google'
+import { Bodoni_Moda, Cormorant_Garamond } from 'next/font/google'
 import "./globals.css";
 
 const bodoni = Bodoni_Moda({
@@ -8,6 +8,14 @@ const bodoni = Bodoni_Moda({
   display: 'swap',
   style: ['italic'], // Solo cargamos la itálica si es la que necesitas
   variable: '--font-bodoni', // Variable para Tailwind
+  weight: '400', // Puedes añadir '700' si necesitas negrita itálica
+})
+
+const cormorant = Cormorant_Garamond({
+  subsets: ['latin'],
+  display: 'swap',
+  style: ['italic'], // Solo cargamos la itálica si es la que necesitas
+  variable: '--font-cormorant', // Variable para Tailwind
   weight: '400', // Puedes añadir '700' si necesitas negrita itálica
 })
 
@@ -145,7 +153,7 @@ export default function RootLayout({
   return (
     <html lang="es-CO" className="scroll-smooth">
       <body
-        className={`${gotham.variable} ${theSeasons.variable} ${gothamItalic.variable} ${theSeasonsItalic.variable} ${bodoni.variable} relativeantialiased md:subpixel-antialiased text-background z-0 w-full`}
+        className={`${gotham.variable} ${cormorant.variable} ${theSeasons.variable} ${gothamItalic.variable} ${theSeasonsItalic.variable} ${bodoni.variable} relativeantialiased md:subpixel-antialiased text-background z-0 w-full`}
       >
         {children}
       </body>

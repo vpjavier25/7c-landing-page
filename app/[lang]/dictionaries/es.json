@@ -4,8 +4,8 @@
             "part1": "Vive sabores, vistas y ",
             "part2": "momentos inolvidables"
         },
-        "subtitlePart1": "DESCUBRE UN ROOFTOP ÚNICO EN CARTAGENA CON GASTRONOMÍA FUSIÓN COCTELES DE ",
-        "subtitlePart2": "AUTOR, ATARDECERES MÁGICOS Y NOCHES MUY CERCA DEL CIELO",
+        "subtitlePart1": "DESCUBRE UN ROOFTOP ÚNICO EN CARTAGENA, DONDE SE VIVE EL MEJOR SUNSET DE LA CIUDAD,",
+        "subtitlePart2": "UNA EXPERIENCIA QUE FLUYE DEL ATARDECER A LA MESA Y DE LA MESA A LA NOCHE QUE LO CAMBIA TODO.",
         "buttons": {
             "reservarAhora": "RESERVAR AHORA",
             "verMenu": "VER MENÚ"
@@ -28,10 +28,11 @@
             "part2": "momentos",
             "part3": "."
         },
-        "subtitlePart1": "DESDE ENTRADAS SORPRENDENTES HASTA PLATOS PRINCIPALES",
-        "subtitlePart2": "LLENOS DE PERSONALIDAD - Y COCTELES QUE CUENTAN HISTORIAS",
-        "subtitlePart3": "7 CIELOS S EL PLAN PERFFECTO PARA CADA OCASIÓN: CITA",
-        "subtitlePart4": "ROMÁNTICA, CELEBRACIÓN CON AMIGOS O CENA CON VISTA.",
+ 
+        "subtitlePart1": "UNA CARTA CREADA PARA COMPARTIR, DESCUBRIR Y",
+        "subtitlePart2": "DISFRUTAR SIN AFÁN. PLATOS CON INSPIRACIÓN INTERNACIONAL,",
+        "subtitlePart3": "PRODUCTO LOCAL Y ESE CARÁCTER CARIBEÑO QUE HACE QUE CADA",
+        "subtitlePart4": "VISITA SE SIENTA DISTINTA.",
         "buttons": {
             "descubreMas": "DESCUBRE MÁS"
         }
@@ -59,12 +60,12 @@
     },
     "menu": {
         "title": {
-            "part1": "Explora ",
-            "part2": "nuestros platos",
-            "part3": "cuidadosamente seleccionados"
+            "part1": "Sabores que ",
+            "part2": "acompañan",
+            "part3": "cada momento"
         },
-        "subtitlePart1": "PARA OFRECERTE UNA EXPERIANCIA INOLVIDABLE: SABORES LOCALES CON TOQUES",
-        "subtitlePart2": "INTERACIONALES, INGREDIENTES FRESCOS Y CREATIVIDAD EN CADA BOCADO."
+        "subtitlePart1": "UNA CARTA CREADA PARA COMPARTIR, DESCUBRIR Y DISFRUTAR SIN AFÁN. PLATOS CON INSPIRACIÓN INTERNACIONAL, PRODUCTO LOCAL",
+        "subtitlePart2": "Y ESE CARÁCTER CARIBEÑO QUE HACE QUE CADA VISITA SE SIENTA DISTINTA."
     },
     "ubicacion": {
         "title": {

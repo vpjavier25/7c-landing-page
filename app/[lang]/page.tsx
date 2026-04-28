@@ -62,7 +62,7 @@ export default async function Home({ params }: { params: Promise<{ lang: string 
                 </span>
               </h1>
 
-              <p className="font-medium font-gotham text-xs/6 text-center sm:text-md/6 xl:text-base/6">
+              <p className="font-medium font-cormorant text-xs/6 text-center sm:text-md/6 xl:text-base/6">
                 {dictionary.home.subtitlePart1}<br />
                 {dictionary.home.subtitlePart2}
               </p>
@@ -96,7 +96,7 @@ export default async function Home({ params }: { params: Promise<{ lang: string 
                   <h3 className="font-theseason-italic font-medium text-4xl mb-10 text-center px-5 sm:text-6xl md:text-7xl xl:text-8xl xl:text-left">
                     {dictionary.sabores.title.part1} <br /> {dictionary.sabores.title.part2}{dictionary.sabores.title.part3}
                   </h3>
-                  <p className="font-medium font-gotham text-xs/6 text-center mb-7 px-5 sm:text-md/6 xl:text-base/6 xl:text-left">
+                  <p className="font-medium font-gotham text-xs/6 text-justify mb-7 px-5 sm:text-md/6 xl:text-base/6 xl:text-left">
                     {dictionary.sabores.subtitlePart1} <br className="hidden sm:block" />
                     {dictionary.sabores.subtitlePart2} <br className="hidden sm:block" />
                     {dictionary.sabores.subtitlePart3} <br className="hidden sm:block" />
