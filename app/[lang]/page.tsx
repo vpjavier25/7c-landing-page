@@ -4,6 +4,7 @@ import Form from "@/components/form";
 import Footer from "@/components/Footer";
 import Image from "next/image";
 import ImagesCard from "@/components/ImagesCard";
+import CallToActionButton from "@/components/CallToActionButton"
 import { notFound } from 'next/navigation'
 import { getDictionary, hasLocale } from './dictionaries'
 
@@ -49,7 +50,11 @@ export default async function Home({ params }: { params: Promise<{ lang: string 
 
 
   return (
-    <div className="flex flex-col w-full ">
+    <div className="flex flex-col w-full relative">
+      
+      <CallToActionButton/>
+
+
       <NavBar />
       <main className="flex flex-col grow">
         <section id="home" className="flex flex-col items-center justify-center w-full">
@@ -67,7 +72,7 @@ export default async function Home({ params }: { params: Promise<{ lang: string 
                 {dictionary.home.subtitlePart2}
               </p>
             </div>
-            <div className="flex flex-col justify-center items-center sm:flex-row gap-4 mt-10">
+            <div className="flex flex-col justify-center items-center sm:flex-row gap-4 mt-6">
               <Button color="dark" url={buttonsLinks.reservarAhora} >{dictionary.home.buttons.reservarAhora}</Button>
               <Button color="light" url={buttonsLinks.verMenu} >{dictionary.home.buttons.verMenu}</Button>
             </div>
@@ -83,7 +88,7 @@ export default async function Home({ params }: { params: Promise<{ lang: string 
               {dictionary.trasciende.title.part5}
             </h2>
 
-            <p className="font-medium font-gotham text-xs/6 text-center mt-5 px-5 xl:mt-9 xl:mb-30 sm:text-md/6 xl:text-base/6">
+            <p className="font-medium font-cormorant text-xs/6 text-center mt-5 px-5 xl:mt-9 xl:mb-30 sm:text-md/6 xl:text-base/6">
               {dictionary.trasciende.subtitlePart1}<br />
               {dictionary.trasciende.subtitlePart2}
             </p>
@@ -96,7 +101,7 @@ export default async function Home({ params }: { params: Promise<{ lang: string 
                   <h3 className="font-theseason-italic font-medium text-4xl mb-10 text-center px-5 sm:text-6xl md:text-7xl xl:text-8xl xl:text-left">
                     {dictionary.sabores.title.part1} <br /> {dictionary.sabores.title.part2}{dictionary.sabores.title.part3}
                   </h3>
-                  <p className="font-medium font-gotham text-xs/6 text-justify mb-7 px-5 sm:text-md/6 xl:text-base/6 xl:text-left">
+                  <p className="font-medium font-cormorant text-xs/6 text-justify mb-7 px-5 sm:text-md/6 xl:text-base/6 xl:text-left">
                     {dictionary.sabores.subtitlePart1} <br className="hidden sm:block" />
                     {dictionary.sabores.subtitlePart2} <br className="hidden sm:block" />
                     {dictionary.sabores.subtitlePart3} <br className="hidden sm:block" />
@@ -112,7 +117,7 @@ export default async function Home({ params }: { params: Promise<{ lang: string 
                   <h3 className="font-theseason-italic font-medium text-4xl text-center sm:text-6xl md:text-7xl xl:text-8xl xl:text-right">
                     {dictionary.vibra.title.part1} <br />{dictionary.vibra.title.part2}
                   </h3>
-                  <p className="font-medium font-gotham text-xs/6 text-center sm:text-md/6 xl:text-base/6 xl:text-right">
+                  <p className="font-medium font-cormorant text-xs/6 text-center sm:text-md/6 xl:text-base/6 xl:text-right">
                     {dictionary.vibra.subtitlePart1} <br />
                     {dictionary.vibra.subtitlePart2} <br />
                     {dictionary.vibra.subtitlePart3}<br />
@@ -128,7 +133,7 @@ export default async function Home({ params }: { params: Promise<{ lang: string 
             <h2 className="font-theseason-italic font-medium text-5xl text-center mb-10 px-5 xl:text-8xl">
               {dictionary.reservar.title}
             </h2>
-            <p className="font-medium font-gotham text-xs/6 text-center mb-7 px-5 sm:text-md/6 xl:text-base/6">
+            <p className="font-medium font-cormorant text-xs/6 text-center mb-7 px-5 sm:text-md/6 xl:text-base/6">
               {dictionary.reservar.subtitle}
             </p>
             <div className="flex flex-col items-center justify-center gap-5 sm:flex-row">
@@ -145,7 +150,7 @@ export default async function Home({ params }: { params: Promise<{ lang: string 
               {dictionary.menu.title.part1}<span className="text-4xl text-primary font-medium font-theseason-italic sm:text-6xl md:text-7xl xl:text-8xl">{dictionary.menu.title.part2}</span> <br />
               <span className="font-medium font-theseason text-4xl text-center mb-7 sm:text-6xl md:text-7xl xl:text-8xl">{dictionary.menu.title.part3}</span>
             </h2>
-            <p className="font-medium font-gotham text-xs/6  text-center px-4 sm:text-md/6 xl:text-base/6">
+            <p className="font-medium font-cormorant text-xs/6  text-center px-4 sm:text-md/6 xl:text-base/6">
               {dictionary.menu.subtitlePart1}<br />
               {dictionary.menu.subtitlePart2}
             </p>
@@ -164,7 +169,7 @@ export default async function Home({ params }: { params: Promise<{ lang: string 
             <span className="text-4xl text-primary font-medium font-theseason-italic px-5 sm:text-7xl">{dictionary.ubicacion.title.part2}</span>
             {dictionary.ubicacion.title.part3}
           </h2>
-          <p className="font-medium font-gotham text-xs/6 text-center mb-7 px-5 sm:text-base/6">
+          <p className="font-medium font-cormorant text-xs/6 text-center mb-7 px-5 sm:text-base/6">
             {dictionary.ubicacion.subtitle}
           </p>
           <div className="flex flex-col justify-center items-center gap-12 xl:flex-row">
@@ -178,14 +183,14 @@ export default async function Home({ params }: { params: Promise<{ lang: string 
               referrerPolicy="no-referrer-when-downgrade">
             </iframe>
             <div className="min-h-30">
-              <p className="font-medium font-gotham text-xs/6 text-primary sm:text-base/6">{dictionary.ubicacion.info.direccionLabel}</p>
-              <p className="font-medium font-gotham text-xs/6 sm:text-base/6">
+              <p className="font-medium font-cormorant text-xs/6 text-primary sm:text-base/6">{dictionary.ubicacion.info.direccionLabel}</p>
+              <p className="font-medium font-cormorant text-xs/6 sm:text-base/6">
                 {dictionary.ubicacion.info.direccionText1}<br />
                 {dictionary.ubicacion.info.direccionText2}
               </p>
 
-              <p className="font-medium font-gotham text-xs/6 text-primary sm:text-base/6 mt-7">{dictionary.ubicacion.info.horarioLabel}</p>
-              <p className="font-medium font-gotham text-xs/6 sm:text-base/6">
+              <p className="font-medium font-cormorant text-xs/6 text-primary sm:text-base/6 mt-7">{dictionary.ubicacion.info.horarioLabel}</p>
+              <p className="font-medium font-cormorant text-xs/6 sm:text-base/6">
                 {dictionary.ubicacion.info.horarioText1} <br />
                 {dictionary.ubicacion.info.horarioText2}
               </p>
@@ -201,7 +206,7 @@ export default async function Home({ params }: { params: Promise<{ lang: string 
                 {dictionary.contacto.title}
               </h2>
             </div>
-            <p className="font-medium font-gotham text-[10px]/6 text-center mb-7 px-5 sm:text-xs/6 sm:text-left">
+            <p className="font-medium font-cormorant text-[10px]/6 text-center mb-7 px-5 sm:text-xs/6 sm:text-left">
               <span className="text-primary">{dictionary.contacto.subtitle.highlight} <br /> {dictionary.contacto.subtitle.highlight2}</span> {dictionary.contacto.subtitle.normal} <br /> {dictionary.contacto.subtitle.normal2}
             </p>
           </div>
@@ -209,35 +214,35 @@ export default async function Home({ params }: { params: Promise<{ lang: string 
           <div className="w-full bg-background-secondary pt-20 sm:pt-25">
             <div className="flex flex-wrap items-center justify-center lg :flex-nowrap gap-2 lg:gap-5">
               <span className="w-5 h-0 border-primary border-1"></span>
-              <h3 className="font-theseason-italic font-medium text-5xl text-center px-5 sm:text-7xl">
+              <h3 className="font-theseason-italic font-medium text-4xl text-center px-5 sm:text-7xl">
                 {dictionary.contacto.infoDirecta}
               </h3>
-              <div className="flex w-auto items-center gap-3 font-gotham text-base sm:text-xl">
+              <div className="flex w-auto items-center gap-3 font-cormorant text-base sm:text-xl">
                 <a href={buttonsLinks.contactoWhatsapp} target="_blank" rel="noopener noreferrer">
-                  <Image src="/icons8-whatsapp-50.png" alt="Whatsapp" width={300} height={300} className='w-10 h-10 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 cursor-pointer' />
+                  <Image src="/icons8-whatsapp-50.png" alt="Whatsapp" width={300} height={300} className='w-7 h-7 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 cursor-pointer' />
                 </a>
                 <span>+57 300 866 3045</span>
               </div>
-              <div className="flex w-auto items-center gap-3 font-gotham text-base sm:text-xl">
+              <div className="flex w-auto items-center gap-3 font-cormorant text-base sm:text-xl">
                 <a href={`mailto:${buttonsLinks.contactoEmail}`} target="_blank" rel="noopener noreferrer">
-                  <Image src="/icons8-mensaje-48.png" alt="Mensaje" width={300} height={300} className='w-10 h-10 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 cursor-pointer' />
+                  <Image src="/icons8-mensaje-48.png" alt="Mensaje" width={270} height={270} className='w-7 h-7 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 cursor-pointer' />
                 </a>
                 <span>{buttonsLinks.contactoEmail.toUpperCase()}</span>
               </div>
             </div>
-            <div className="flex w-auto flex-wrap justify-center items-center gap-3 font-gotham text-base pt-20 sm:text-xl">
+            <div className="flex w-auto flex-wrap justify-center items-center gap-3 font-cormorant text-base pt-20 sm:text-xl">
               <div className="flex w-auto items-center gap-2 lg:gap-5">
                 <span className="w-5 h-0 border-primary border-1 lg:w-13"></span>
-                <h3 className="font-theseason-italic font-medium text-5xl text-center px-5 sm:text-7xl">
+                <h3 className="font-theseason-italic font-medium text-4xl text-center px-5 sm:text-7xl">
                   {dictionary.contacto.siguenos}
                 </h3>
               </div>
-              <div className="flex  w-auto items-center gap-3 font-gotham text-base sm:text-xl">
+              <div className="flex  w-auto items-center gap-3 font-cormorant text-base sm:text-xl">
                 <a href={buttonsLinks.tiktok} target="_blank" rel="noopener noreferrer">
-                  <Image src="/Button_Tik_tok.png" alt="Tik tok" width={300} height={300} className='w-15 h-15 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 cursor-pointer' />
+                  <Image src="/Button_Tik_tok.png" alt="Tik tok" width={300} height={300} className='w-12 h-12 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 cursor-pointer' />
                 </a>
                 <a href={buttonsLinks.instagram} target="_blank" rel="noopener noreferrer">
-                  <Image src="/Button_Instagram.png" alt="Instagram" width={300} height={300} className='w-15 h-15 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 cursor-pointer' />
+                  <Image src="/Button_Instagram.png" alt="Instagram" width={300} height={300} className='w-12 h-12 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 cursor-pointer' />
                 </a>
               </div>
             </div>
@@ -253,24 +258,24 @@ export default async function Home({ params }: { params: Promise<{ lang: string 
             </h2>
           </div>
           <ul className="flex flex-col gap-7">
-            <li className="text-gotham text-medium text-xs/6 sm:text-base/6">
+            <li className="text-cormorant text-medium text-xs/6 sm:text-base/6">
               {dictionary.politicas.items["1"].text1} <br />
               {dictionary.politicas.items["1"].text2} <br />
               {dictionary.politicas.items["1"].text3} </li>
-            <li className="text-gotham text-medium text-xs/6 sm:text-base/6">
+            <li className="text-cormorant text-medium text-xs/6 sm:text-base/6">
               <b>{dictionary.politicas.items["2"].bold}</b>{dictionary.politicas.items["2"].text1} <br />
               {dictionary.politicas.items["2"].text2}
             </li>
-            <li className="text-gotham text-medium text-xs/6 sm:text-base/6">
+            <li className="text-cormorant text-medium text-xs/6 sm:text-base/6">
               <b>{dictionary.politicas.items["3"].bold}</b>{dictionary.politicas.items["3"].text}
             </li>
-            <li className="text-gotham text-medium text-xs/6 sm:text-base/6">
+            <li className="text-cormorant text-medium text-xs/6 sm:text-base/6">
               <b>{dictionary.politicas.items["4"].bold}</b>{dictionary.politicas.items["4"].text}
             </li>
-            <li className="text-gotham text-medium text-xs/6 sm:text-base/6 ">
+            <li className="text-cormorant text-medium text-xs/6 sm:text-base/6 ">
               <b>{dictionary.politicas.items["5"].bold}</b>{dictionary.politicas.items["5"].text}
             </li>
-            <li className="text-gotham text-medium text-xs/6 sm:text-base/6">
+            <li className="text-cormorant text-medium text-xs/6 sm:text-base/6">
               <b>{dictionary.politicas.items["6"].bold}</b>{dictionary.politicas.items["6"].text}
             </li>
           </ul>
