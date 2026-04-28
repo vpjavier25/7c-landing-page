@@ -130,7 +130,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "7 Cielos Rooftop Gastrobar | Cartagena",
     description: "Gastronomía fusión, coctelería de autor y atardeceres mágicos en Bocagrande.",
-    url: "https://www.7cielos.com",
+    url: "https://www.7cielos.com.co",
     siteName: "7 Cielos Rooftop",
     images: [
       {
