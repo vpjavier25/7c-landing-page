@@ -146,7 +146,7 @@ export default async function Home({ params }: { params: Promise<{ lang: string 
         </section>
 
         <section id="menu" className="flex flex-col items-center justify-center w-full gap-20">
-          <div className="flex flex-col gap-10 h-full w-full relative pt-30">
+          <div className="flex flex-col items-center gap-10 h-full w-full relative pt-30">
             <Image src="/Menu_Principal.png" alt="Menu" fill={true} className='object-cover -z-10 absolute bg-background' />
             <h2 className="font-theseason-italic font-medium text-4xl text-center px-5 sm:text-6xl md:text-7xl xl:text-8xl">
               {dictionary.menu.title.part1}<span className="text-4xl text-primary font-medium font-theseason-italic sm:text-6xl md:text-7xl xl:text-8xl">{dictionary.menu.title.part2}</span> <br />
@@ -157,6 +157,7 @@ export default async function Home({ params }: { params: Promise<{ lang: string 
               {dictionary.menu.subtitlePart2}
             </p>
           <ImagesCard homeSection={menuSection}/>
+          <Button color="light" url={buttonsLinks.verMenu}>{dictionary.menu.buttons.verMenu}</Button>
           </div>
         </section>
         <section id="ubicacion" className="flex flex-col items-center justify-center w-full gap-8 pt-20 px-10 bg-background">

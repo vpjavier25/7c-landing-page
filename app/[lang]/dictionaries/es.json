@@ -1,6 +1,6 @@
 {
-    "bookButton":{
-        "reservarAhora":"Reservar"
+    "bookButton": {
+        "reservarAhora": "Reservar"
     },
     "home": {
         "title": {
@@ -31,7 +31,6 @@
             "part2": "momentos",
             "part3": "."
         },
- 
         "subtitlePart1": "UNA CARTA CREADA PARA COMPARTIR, DESCUBRIR Y",
         "subtitlePart2": "DISFRUTAR SIN AFÁN. PLATOS CON INSPIRACIÓN INTERNACIONAL,",
         "subtitlePart3": "PRODUCTO LOCAL Y ESE CARÁCTER CARIBEÑO QUE HACE QUE CADA",
@@ -68,7 +67,10 @@
             "part3": "cada momento"
         },
         "subtitlePart1": "UNA CARTA CREADA PARA COMPARTIR, DESCUBRIR Y DISFRUTAR SIN AFÁN. PLATOS CON INSPIRACIÓN INTERNACIONAL, PRODUCTO LOCAL",
-        "subtitlePart2": "Y ESE CARÁCTER CARIBEÑO QUE HACE QUE CADA VISITA SE SIENTA DISTINTA."
+        "subtitlePart2": "Y ESE CARÁCTER CARIBEÑO QUE HACE QUE CADA VISITA SE SIENTA DISTINTA.",
+        "buttons": {
+            "verMenu": "VER MENÚ"
+        }
     },
     "ubicacion": {
         "title": {

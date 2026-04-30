@@ -1,6 +1,6 @@
 {
-    "bookButton":{
-        "reservarAhora":"Book Now"
+    "bookButton": {
+        "reservarAhora": "Book Now"
     },
     "home": {
         "title": {
@@ -67,7 +67,10 @@
             "part3": "carefully selected"
         },
         "subtitlePart1": "A MENU CREATED TO SHARE, DISCOVER, AND ENJOY WITHOUT RUSH. DISHES WITH INTERNATIONAL INSPIRATION, LOCAL PRODUCTS",
-        "subtitlePart2": "AND THAT CARIBBEAN CHARACTER THAT MAKES EVERY VISIT FEEL DIFFERENT."
+        "subtitlePart2": "AND THAT CARIBBEAN CHARACTER THAT MAKES EVERY VISIT FEEL DIFFERENT.",
+        "buttons": {
+            "verMenu": "VIEW MENU"
+        }
     },
     "ubicacion": {
         "title": {
